@@ -1,0 +1,6 @@
+comparison-of-LLM-prompting-techniques/
+mlruns/
+logs/
+.env
+.DS_Store
+__pycache__
