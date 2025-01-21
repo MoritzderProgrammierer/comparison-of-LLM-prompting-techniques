@@ -1,0 +1,7 @@
+python-dotenv>=1.0.0  # For .env file handling
+llama-cpp-python>=0.3.6  # For loading and running LLaMA models
+pandas>=2.2.0  # For data handling
+nltk>=3.9.0  # For BLEU score calculation
+rouge-score  # For ROUGE metrics
+bert-score  # For BERT-Score metric
+mlflow>=2.19.0  # For experiment tracking
