@@ -25,7 +25,7 @@ source myenv/bin/activate
 ## Install Required Packages: Use the requirements.txt file to install all necessary dependencies:
 
 ```bash
-pip install -r requirements.tx
+pip install -r requirements.txt
 ```
 
 For problems with the in installation of llama-cpp-python, please refer to the official documentation:
