@@ -5,3 +5,4 @@ nltk>=3.9.0  # For BLEU score calculation
 rouge-score  # For ROUGE metrics
 bert-score  # For BERT-Score metric
 mlflow>=2.19.0  # For experiment tracking
+matplotlib
