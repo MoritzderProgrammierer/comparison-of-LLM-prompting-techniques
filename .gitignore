@@ -2,6 +2,7 @@ comparison-of-LLM-prompting-techniques/
 mlruns/
 sq/
 logs/
+plots/
 myenv/
 .env
 .DS_Store
