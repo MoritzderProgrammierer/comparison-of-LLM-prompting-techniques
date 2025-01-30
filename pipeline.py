@@ -1,10 +1,11 @@
-from llama_cpp import Llama # is somehow need for windows users
+from llama_cpp import Llama # is somehow needed for windows users
 import os
 import logging
 import mlflow
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import time
 from dotenv import load_dotenv
 from metrics import (
     calculate_bert_score,
@@ -15,10 +16,12 @@ from metrics import (
 )
 from prompt_strategy import (
     ZeroShotStrategy, 
-    ChainOfThoughtStrategy, 
-    TestStrategy, 
-    BaselineStrategy, 
-    PersonaStrategy
+    InstructionStrategy, 
+    PersonaStrategy,
+    FewShotStrategy,
+    SelfCorrectStrategy,
+    AllTogetherStrategy,
+    ComparisonStrategy
 )
 from model_loader import ModelLoader
 from plot_creators import (
@@ -81,6 +84,7 @@ def run_pipeline(file_path, models, strategies, metrics):
         for model_dict in models:
             model_name = model_dict["name"]
             model = model_dict["model"]
+            print("Starting time model: ", time.ctime())
             logger.info("Starting pipeline for model: %s", model_name)
 
             with mlflow.start_run(run_name=model_name, nested=True):
@@ -93,6 +97,7 @@ def run_pipeline(file_path, models, strategies, metrics):
 
                 for strategy in strategies:
                     strategy_name = type(strategy).__name__
+                    print("Starting time strategy: ", time.ctime())
                     logger.info("Using strategy: %s", strategy_name)
 
                     with mlflow.start_run(run_name=strategy_name, nested=True):
@@ -298,16 +303,21 @@ if __name__ == "__main__":
 
     # Load models
     models = [
-        ModelLoader.load_llama_cpp_model(model_path_gemma, "gemma-2b-it-q4"),
-        ModelLoader.load_llama_cpp_model(model_path_llama3_1, "llama-3.1-8b-q5-k-m"),
+        # ModelLoader.load_llama_cpp_model(model_path_gemma, "gemma-2b-it-q4"),
+        # ModelLoader.load_llama_cpp_model(model_path_llama3_1, "llama-3.1-8b-q5-k-m"),
         ModelLoader.load_llama_cpp_model(model_path_llama3_2, "llama-3.2-3b-q8-0"),
         # ModelLoader.load_llama_cpp_model(model_path_aya_23, "aya-23-35b-iq2-xxs"),
     ]
 
     # Strategies
     strategies = [
-        BaselineStrategy(),
-        PersonaStrategy()
+        #ZeroShotStrategy(),
+        #InstructionStrategy(),
+        #PersonaStrategy(),
+        #FewShotStrategy(),
+        #SelfCorrectStrategy(),
+        #AllTogetherStrategy(),
+        ComparisonStrategy()
     ]
 
     # Metrics
