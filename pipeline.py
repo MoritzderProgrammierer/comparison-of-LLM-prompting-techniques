@@ -1,3 +1,4 @@
+from llama_cpp import Llama # is somehow need for windows users
 import os
 import logging
 import mlflow
@@ -23,123 +24,222 @@ def run_pipeline(file_path, models, strategies, metrics):
       - Logs metrics per row
       - Logs average metrics across rows
       - Logs artifacts containing translations
+      - Logs aggregated averages for each Strategy over all models (top-level)
+      - Logs per-model averages (second-level).
     """
-
     logger.info("Loading test data from %s...", file_path)
     df = pd.read_pickle(file_path)
     logger.debug("Loaded dataframe of shape %s", df.shape)
 
-    # Start one MLflow run for the entire pipeline
     with mlflow.start_run(run_name="translation_pipeline"):
         mlflow.log_param("data_file_used", file_path)
+
+        strategy_sums_eng2de = {
+            type(strategy).__name__: {m: 0.0 for m in metrics} for strategy in strategies
+        }
+        strategy_counts_eng2de = {
+            type(strategy).__name__: 0 for strategy in strategies
+        }
+        strategy_sums_de2eng = {
+            type(strategy).__name__: {m: 0.0 for m in metrics} for strategy in strategies
+        }
+        strategy_counts_de2eng = {
+            type(strategy).__name__: 0 for strategy in strategies
+        }
 
         for model_dict in models:
             model_name = model_dict["name"]
             model = model_dict["model"]
             logger.info("Starting pipeline for model: %s", model_name)
 
-            mlflow.log_param("model_loaded", model_name)
+            # second-level run for each model
+            with mlflow.start_run(run_name=model_name, nested=True):
+                mlflow.log_param("model_name", model_name)
 
-            for strategy in strategies:
-                strategy_name = type(strategy).__name__
-                logger.info("Using strategy: %s", strategy_name)
+                model_sums_eng2de = {m: 0.0 for m in metrics}
+                model_sums_de2eng = {m: 0.0 for m in metrics}
+                model_count_eng2de = 0
+                model_count_de2eng = 0
 
-                # Nested MLflow run for each (model, strategy) pair
-                with mlflow.start_run(run_name=f"{model_name}_{strategy_name}", nested=True):
-                    mlflow.log_param("model", model_name)
-                    mlflow.log_param("strategy", strategy_name)
+                for strategy in strategies:
+                    strategy_name = type(strategy).__name__
+                    logger.info("Using strategy: %s", strategy_name)
 
-                    # Sums for computing averages
-                    metric_sums_eng2de = {m: 0.0 for m in metrics}
-                    metric_sums_de2eng = {m: 0.0 for m in metrics}
-                    row_count_eng2de = 0
-                    row_count_de2eng = 0
+                    # third-level run for each (model, strategy) pair
+                    with mlflow.start_run(run_name=strategy_name, nested=True):
+                        mlflow.log_param("model", model_name)
+                        mlflow.log_param("strategy", strategy_name)
 
-                    translations_for_artifact = []
+                        metric_sums_eng2de = {m: 0.0 for m in metrics}
+                        metric_sums_de2eng = {m: 0.0 for m in metrics}
+                        row_count_eng2de = 0
+                        row_count_de2eng = 0
 
-                    for idx, row in df.iterrows():
-                        complexity = row["complexity"]
-                        text_english = row["text_english"]
-                        text_german = row["text_german"]
+                        translations_for_artifact = []
 
-                        logger.debug("Processing row idx=%d (complexity=%s)", idx, complexity)
-                        mlflow.log_param(f"complexity_{idx}", complexity)
+                        for idx, row in df.iterrows():
+                            complexity = row["complexity"]
+                            text_english = row["text_english"]
+                            text_german = row["text_german"]
 
-                        # 1) Translate English -> German
-                        translation_eng2de = strategy.translate_to_german(model, text_english)
-                        logger.debug(
-                            "English->German translation for row %d: %r",
-                            idx, translation_eng2de
-                        )
+                            logger.debug("Processing row idx=%d (complexity=%s)", idx, complexity)
+                            mlflow.log_param(f"complexity_{idx}", complexity)
 
-                        # Calculate metrics Eng->De
-                        for metric_name, metric_fn in metrics.items():
-                            score = metric_fn(text_german, translation_eng2de)
-                            mlflow.log_metric(f"{metric_name}_eng2de_{complexity}", score)
-                            metric_sums_eng2de[metric_name] += score
-                        row_count_eng2de += 1
+                            # translate English->German
+                            translation_eng2de = strategy.translate_to_german(model, text_english)
+                            for metric_name, metric_fn in metrics.items():
+                                score = metric_fn(text_german, translation_eng2de)
 
-                        # 2) Translate German -> English
-                        translation_de2eng = strategy.translate_to_english(model, text_german)
-                        logger.debug(
-                            "German->English translation for row %d: %r",
-                            idx, translation_de2eng
-                        )
+                                mlflow.log_metric(f"{metric_name}_eng2de_{complexity}", score)
+                                metric_sums_eng2de[metric_name] += score
+                            row_count_eng2de += 1
 
-                        # Calculate metrics De->Eng
-                        for metric_name, metric_fn in metrics.items():
-                            score = metric_fn(text_english, translation_de2eng)
-                            mlflow.log_metric(f"{metric_name}_de2eng_{complexity}", score)
-                            metric_sums_de2eng[metric_name] += score
-                        row_count_de2eng += 1
+                            # translate German->English
+                            translation_de2eng = strategy.translate_to_english(model, text_german)
+                            for metric_name, metric_fn in metrics.items():
+                                score = metric_fn(text_english, translation_de2eng)
+                                mlflow.log_metric(f"{metric_name}_de2eng_{complexity}", score)
+                                metric_sums_de2eng[metric_name] += score
+                            row_count_de2eng += 1
 
-                        # Collect translations for artifact
-                        translations_for_artifact.append(
-                            f"Row idx={idx}, complexity={complexity}\n"
-                            f"Original English : {text_english}\n"
-                            f"Translation Eng->De: {translation_eng2de}\n\n"
-                            f"Original German  : {text_german}\n"
-                            f"Translation De->Eng: {translation_de2eng}\n\n"
-                            "-----------------------------------------------------\n"
-                        )
-
-                    # After processing all rows, log average metrics
-                    if row_count_eng2de > 0:
-                        for metric_name in metrics:
-                            avg_score = metric_sums_eng2de[metric_name] / row_count_eng2de
-                            mlflow.log_metric(f"{metric_name}_eng2de_avg", avg_score)
-                            logger.debug(
-                                "Average %s_eng2de across %d rows: %f",
-                                metric_name, row_count_eng2de, avg_score
+                            # collect translations for artifact
+                            translations_for_artifact.append(
+                                f"Row idx={idx}, complexity={complexity}\n"
+                                f"Original English : {text_english}\n"
+                                f"Translation Eng->De: {translation_eng2de}\n\n"
+                                f"Original German  : {text_german}\n"
+                                f"Translation De->Eng: {translation_de2eng}\n\n"
+                                "-----------------------------------------------------\n"
                             )
 
-                    if row_count_de2eng > 0:
+                        # log average metrics for this model and strategy
                         for metric_name in metrics:
-                            avg_score = metric_sums_de2eng[metric_name] / row_count_de2eng
-                            mlflow.log_metric(f"{metric_name}_de2eng_avg", avg_score)
-                            logger.debug(
-                                "Average %s_de2eng across %d rows: %f",
-                                metric_name, row_count_de2eng, avg_score
-                            )
+                            # Eng->De average
+                            if row_count_eng2de > 0:
+                                avg_e = metric_sums_eng2de[metric_name] / row_count_eng2de
+                                mlflow.log_metric(f"{metric_name}_eng2de_avg", avg_e)
+                                logger.debug("Avg %s_eng2de for %s-%s = %.4f", metric_name, model_name, strategy_name, avg_e)
 
-                    # Write translations to an artifact file
-                    os.makedirs("./logs", exist_ok=True)
-                    artifact_file = f"./logs/translations_{model_name}_{strategy_name}.txt"
-                    with open(artifact_file, "w", encoding="utf-8") as f:
-                        f.writelines(translations_for_artifact)
-                    mlflow.log_artifact(artifact_file)
-                    logger.info(
-                        "Wrote translations artifact for %s / %s to %s",
-                        model_name, strategy_name, artifact_file
-                    )
+                            # De->Eng average
+                            if row_count_de2eng > 0:
+                                avg_d = metric_sums_de2eng[metric_name] / row_count_de2eng
+                                mlflow.log_metric(f"{metric_name}_de2eng_avg", avg_d)
+                                logger.debug("Avg %s_de2eng for %s-%s = %.4f", metric_name, model_name, strategy_name, avg_d)
 
-            # Close model if needed, does not properly work right now.
+                            # both directions combined
+                            if row_count_eng2de > 0 and row_count_de2eng > 0:
+                                both_avg = (
+                                    metric_sums_eng2de[metric_name] + metric_sums_de2eng[metric_name]
+                                ) / (row_count_eng2de + row_count_de2eng)
+                                mlflow.log_metric(f"{metric_name}_both_avg", both_avg)
+                                logger.debug("Avg %s_both for %s-%s = %.4f", metric_name, model_name, strategy_name, both_avg)
+
+                        for metric_name in metrics:
+                            model_sums_eng2de[metric_name] += metric_sums_eng2de[metric_name]
+                            model_sums_de2eng[metric_name] += metric_sums_de2eng[metric_name]
+
+                        model_count_eng2de += row_count_eng2de
+                        model_count_de2eng += row_count_de2eng
+
+                        if row_count_eng2de > 0:
+                            for metric_name in metrics:
+                                strategy_sums_eng2de[strategy_name][metric_name] += metric_sums_eng2de[metric_name]
+                            strategy_counts_eng2de[strategy_name] += row_count_eng2de
+
+                        if row_count_de2eng > 0:
+                            for metric_name in metrics:
+                                strategy_sums_de2eng[strategy_name][metric_name] += metric_sums_de2eng[metric_name]
+                            strategy_counts_de2eng[strategy_name] += row_count_de2eng
+
+                        os.makedirs("./logs", exist_ok=True)
+                        artifact_file = f"./logs/translations_{model_name}_{strategy_name}.txt"
+                        with open(artifact_file, "w", encoding="utf-8") as f:
+                            f.writelines(translations_for_artifact)
+                        mlflow.log_artifact(artifact_file)
+                        logger.info(
+                            "Wrote translations artifact for %s / %s to %s",
+                            model_name, strategy_name, artifact_file
+                        )
+
+                # compute secon-level averages
+                for metric_name in metrics:
+                    # Eng->De
+                    if model_count_eng2de > 0:
+                        model_avg_e = model_sums_eng2de[metric_name] / model_count_eng2de
+                        mlflow.log_metric(f"{metric_name}_eng2de_model_avg", model_avg_e)
+                        logger.info(
+                            "[MODEL AVG] %s for Eng->De on model '%s': %.4f (over %d translations)",
+                            metric_name, model_name, model_avg_e, model_count_eng2de
+                        )
+
+                    # De->Eng
+                    if model_count_de2eng > 0:
+                        model_avg_d = model_sums_de2eng[metric_name] / model_count_de2eng
+                        mlflow.log_metric(f"{metric_name}_de2eng_model_avg", model_avg_d)
+                        logger.info(
+                            "[MODEL AVG] %s for De->Eng on model '%s': %.4f (over %d translations)",
+                            metric_name, model_name, model_avg_d, model_count_de2eng
+                        )
+
+                    # both directions combined
+                    if model_count_eng2de > 0 and model_count_de2eng > 0:
+                        combined = (
+                            model_sums_eng2de[metric_name] + model_sums_de2eng[metric_name]
+                        ) / (model_count_eng2de + model_count_de2eng)
+                        mlflow.log_metric(f"{metric_name}_both_model_avg", combined)
+                        logger.info(
+                            "[MODEL AVG] %s for both directions on model '%s': %.4f (over %d translations total)",
+                            metric_name, model_name, combined, model_count_eng2de + model_count_de2eng
+                        )
+
+            # close model
             if hasattr(model, "close"):
                 logger.debug("Closing model: %s", model_name)
                 model.close()
 
-    logger.info("Pipeline run finished.")
+        # compute strategy-level averages for top-level
+        for strategy in strategies:
+            s_name = type(strategy).__name__
 
+            # Eng->De
+            if strategy_counts_eng2de[s_name] > 0:
+                for metric_name in metrics:
+                    total_score = strategy_sums_eng2de[s_name][metric_name]
+                    total_count = strategy_counts_eng2de[s_name]
+                    avg_score = total_score / total_count
+                    mlflow.log_metric(f"avg_{metric_name}_eng2de_over_all_models_{s_name}", avg_score)
+                    logger.info(
+                        "Strategy %s: Overall average %s_eng2de across all models (total %d translations) = %.4f",
+                        s_name, metric_name, total_count, avg_score
+                    )
+
+            # De->Eng
+            if strategy_counts_de2eng[s_name] > 0:
+                for metric_name in metrics:
+                    total_score = strategy_sums_de2eng[s_name][metric_name]
+                    total_count = strategy_counts_de2eng[s_name]
+                    avg_score = total_score / total_count
+                    mlflow.log_metric(f"avg_{metric_name}_de2eng_over_all_models_{s_name}", avg_score)
+                    logger.info(
+                        "Strategy %s: Overall average %s_de2eng across all models (total %d translations) = %.4f",
+                        s_name, metric_name, total_count, avg_score
+                    )
+
+            # both directions combined
+            if strategy_counts_eng2de[s_name] > 0 and strategy_counts_de2eng[s_name] > 0:
+                for metric_name in metrics:
+                    total_e = strategy_sums_eng2de[s_name][metric_name]
+                    count_e = strategy_counts_eng2de[s_name]
+                    total_d = strategy_sums_de2eng[s_name][metric_name]
+                    count_d = strategy_counts_de2eng[s_name]
+                    combined_avg = (total_e + total_d) / (count_e + count_d)
+                    mlflow.log_metric(f"avg_{metric_name}_both_over_all_models_{s_name}", combined_avg)
+                    logger.info(
+                        "Strategy %s: Overall avg %s_both across all models (%d) = %.4f",
+                        s_name, metric_name, count_e + count_d, combined_avg
+                    )
+
+    logger.info("Pipeline run finished.")
 
 
 if __name__ == "__main__":
@@ -158,8 +258,8 @@ if __name__ == "__main__":
 
     # Load models
     models = [
-        ModelLoader.load_llama_cpp_model(model_path_gemma, "gemma-2b-q8"),
-        # ModelLoader.load_llama_cpp_model(model_path_llama3_1, "llama-3.1-8b-q5-k-m"),
+        ModelLoader.load_llama_cpp_model(model_path_gemma, "gemma-2b-it-q4"),
+        ModelLoader.load_llama_cpp_model(model_path_llama3_1, "llama-3.1-8b-q5-k-m"),
         # ModelLoader.load_llama_cpp_model(model_path_llama3_2, "llama-3.2-3b-q8-0"),
         # ModelLoader.load_llama_cpp_model(model_path_aya_23, "aya-23-35b-iq2-xxs"),
     ]
@@ -167,8 +267,8 @@ if __name__ == "__main__":
     # Strategies
     strategies = [
         ZeroShotStrategy(),
-        ChainOfThoughtStrategy(),
-        # TestStrategy()
+        # ChainOfThoughtStrategy(),
+        TestStrategy()
     ]
 
     # Metrics
