@@ -77,3 +77,45 @@ class TestStrategy(PromptStrategy):
         logger.debug("TestStrategy translate_to_english: prompt=%r", prompt)
         response = model(prompt, max_tokens=5)
         return response["choices"][0]["text"].strip()
+
+
+class BaselineStrategy(PromptStrategy):
+    def translate_to_german(self, model, text_to_translate: str) -> str:
+        prompt = f"Translate the following text into German. Only return the translation:\n{text_to_translate}"
+        logger.debug("BaselineStrategy translate_to_german: prompt=%r", prompt)
+        response = model(prompt, max_tokens=5)
+        print("\nPrompt: ", prompt)
+        print("\nResponse: ", response)
+        # We assume the model returns a dict with response["choices"][0]["text"]
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+    def translate_to_english(self, model, text_to_translate: str) -> str:
+        prompt = f"Translate the following text into English. Only return the translation:\n{text_to_translate}"
+        logger.debug("ZeroShotStrategy translate_to_english: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        print("\nPrompt: ", prompt)
+        print("\nResponse: ", response)
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+
+class PersonaStrategy(PromptStrategy):
+    def translate_to_german(self, model, text_to_translate: str) -> str:
+        prompt = f"Role: You are an expert in translation. You studied english for 45 years. You are born in germany and live in germany. Your parents raised you bilingual. Translate the following text into German. Only return the translation:\n{text_to_translate}"
+        logger.debug("PersonaStrategy translate_to_german: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        print("\nPrompt: ", prompt)
+        print("\nResponse: ", response)
+        # We assume the model returns a dict with response["choices"][0]["text"]
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+    def translate_to_english(self, model, text_to_translate: str) -> str:
+        prompt = f"Role: You are an expert in translation. You studied english for 45 years. You are born in germany and live in germany. Your parents raised you bilingual. Translate the following text into English. Only return the translation:\n{text_to_translate}"
+        logger.debug("PersonaStrategy translate_to_english: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        print("\nPrompt: ", prompt)
+        print("\nResponse: ", response)
+        translation = response["choices"][0]["text"].strip()
+        return translation
