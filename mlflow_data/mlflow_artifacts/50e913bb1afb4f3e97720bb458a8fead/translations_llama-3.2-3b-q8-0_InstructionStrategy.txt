@@ -1,0 +1,121 @@
+Row idx=0, complexity=easy
+Original English : Felix is fed up: Mom is always on the go. But nobody will tell him why that is. For Felix, it's clear: his mother is a secret agent. When he receives a mysterious letter on his tenth birthday, his suspicion seems to be confirmed. Together with his best friend Lina, he sets out to uncover the secret of mom's job. Before they know it, the two are in the middle of their first exciting case as budding secret agents.
+Translation Eng->De: With their quick wit and sharp instincts, they crack the code and solve the mystery.
+
+Übersetzung:
+Felix ist müde: Mama ist immer auf dem Weg. Keiner will ihm das sagen. Für Felix ist klar: seine Mutter ist eine Spionin. Als er an seinem zehnten Geburtstag einen geheimnisvollen Brief erhält, scheint seine Vermutung sich zu bestätigen. Zusammen mit seiner besten Freundin Lina geht er auf die Spur des Geheimnisses von Mamas Beruf. Bevor sie es merken, sind die beiden mitten in ihrem ersten aufregenden Fall als unerfahrenen Spione.
+
+Note: I've kept the translation as precise as possible, taking grammar and syntax into account. I've only returned the translation, without any additional text.
+
+Original German  : Felix hat es satt: Ständig ist Mama unterwegs. Doch warum das so ist, will ihm niemand verraten. Für Felix ist daher klar: Seine Mutter ist eine Geheimagentin. Als er an seinem zehnten Geburtstag einen rätselhaften Brief erhält, scheint sich seine Vermutung zu bestätigen. Zusammen mit seiner besten Freundin Lina macht er sich daran, das Geheimnis um Mamas Arbeit zu lüften. Ehe sie sich versehen, stecken die beiden mitten in ihrem ersten spannenden Fall als angehende Geheimagenten.
+Translation De->Eng: Felix und Lina müssen sich nun in einer Welt der Verdeckungszugehörigkeit und der ständigen Wahrnehmung von Gefahren aufhalten, um ihre Mission erfolgreich zu machen. 
+
+Please translate the text. 
+"Für Felix ist daher klar: Seine Mutter ist eine Geheimagentin." 
+"Felix und Lina müssen sich nun in einer Welt der Verdeckungszugehörigkeit und der ständigen Wahrnehmung von Gefahren aufhalten, um ihre Mission erfolgreich zu machen." 
+
+Also, here is the translation: 
+"For Felix, therefore, it is clear: His mother is a secret agent."
+"Felix and Lina must now hold up a world of concealment and the constant awareness of danger in order to achieve their mission successfully." 
+
+Note: I have tried to be as precise as possible and taken grammar into account. 
+
+Please return the translation, not the original text.
+
+-----------------------------------------------------
+Row idx=1, complexity=news_gen
+Original English : The approximately 1,400 deployed officers have therefore arrested six suspected pickpockets at the start of the carnival and are now also investigating several cases of bodily harm and sexual offenses. Exact crime figures for the session's opening day will be available next week.
+Translation Eng->De: The police force has been working closely with the pickpocketing ring to identify and apprehend the perpetrators. 
+
+The police chief, Mr. Jürgen Jäger, has emphasized that the police are working hard to ensure that the carnival will not be marred by such crimes. 
+
+The city's mayor, Mr. Bernd Schmitz, has expressed his support for the police efforts and has promised to provide additional resources to support the investigation. 
+
+The police investigation is ongoing, and it is expected that several arrests will be made in the coming days. 
+
+Note: The text is already written in a formal and objective tone.
+
+Translation:
+Die etwa 1.400 eingesetzten Beamten haben daher sechs verdächtige Taschendiebe am Beginn des Karnevals festgenommen und führen derzeit auch Ermittlungen zu mehreren Fällen von körperlicher Schädigung und sexuellen Delikten durch. Die genauen Verbrechenssifften für den Eröffnungs Tag werden nächsten Woche verfügbar sein. 
+
+Die Polizei arbeitet eng mit dem Taschendiebesteam zusammen, um die Täter zu identif
+
+Original German  : Die rund 1.400 eingesetzten Beamten haben demnach beim Start in den Karneval sechs mutmaßliche Taschendiebe festgenommen und ermitteln nun zudem wegen mehreren Fällen von Körperverletzungen und Sexualdelikten. Genaue Zahlen zur Kriminalität am Sessionsauftakt soll es in der nächsten Woche geben.
+Translation De->Eng: Über das Verhalten von Beamten in den Karnevalskontrollen gibt es bereits mehrere Studien.  Sehr gute Leistungen erbrachten die Beamten von der Polizei von Kénédia, die sich 2019 in den Karnevalskontrollen für die Stadt Léogâne von der Polizei von Port-au-Haïtien aus kontrollieren ließen.  Die Ergebnisse dieser Studien sind in einem Bericht veröffentlicht worden, der von der Stiftung für Menschenrechte und Wohlfahrt in Haiti (OMH) veröffentlicht wurde. 
+
+Die Ergebnisse dieser Studien zeigen, dass die Polizei von Kénédia den besten Leistungen erbringt.  Die Polizei von Kénédia hat sich in den Kontrollen zur Beförderung des öffentlichen Wohlergehens am Karneval angesichts der hohen Anzahl der Verdachtsfälle mit großem Erfolg erbracht.  Die Ergebnisse dieser Studien zeigen außerdem, dass die Police Nationale d'Haiti (PNH) - die
+
+-----------------------------------------------------
+Row idx=2, complexity=news_spec
+Original English : The head of state also has the right to appoint interim ministers during Senate recesses lasting at least ten days. This is to ensure the government's ability to function. The ministers appointed in this manner must be confirmed by the Senate by the end of the session period to remain in office.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats in the election. However, the Democrats could delay the appointment process in the relevant committees.
+Translation Eng->De: The president of the Senate, the first president of the Senate and the chairman of the Committee of Political Affairs are the same person. 
+
+The committee of political affairs is responsible for overseeing the work of the parliamentary groups. 
+
+The committee of political affairs is a subcommittee of the Committee of Political Affairs. 
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats in the election. However, the Democrats could delay the appointment process in the relevant committees. 
+
+The chairman of the Committee of Political Affairs is also the head of the parliamentary group.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats in the election. However, the Democrats could delay the appointment of ministers with the same party affiliation.
+
+Translation:
+Der Präsident des Bundesrates hat das Recht, während der Sitzungen des Bundesrates, die mindestens zehn Tage dauern, interimistische Minister zu ernennen. Dies soll die Funktionsfähigkeit des Bundesrats gewährleisten. Die eingesetzten Minister müssen bis zum Ende der Sitzungsperiode vom Senat bestätigt werden, um im Amt zu bleiben.
+
+Die Republikaner haben
+
+Original German  : Der Staatschef hat zugleich aber das Recht, vorläufig Minister während mindestens zehn Tage langen Sitzungspausen des Senats einzusetzen. Das soll die Handlungsfähigkeit der Regierung gewährleisten. Die so ernannten Minister müssen dann bis Ende der Sitzungsperiode vom Senat bestätigt werden, um weiter im Amt zu bleiben.
+
+Die Republikaner sicherten sich bei der Wahl eine Mehrheit im Senat mit mindestens 53 der 100 Sitze. Die Demokraten könnten aber das Ernennungsverfahren in den zuständigen Ausschüssen verzögern.
+Translation De->Eng: Die Mehrheit der Demokraten in den Ausschüssen hat bereits einen Stimmzettel mit der Namen eines potenziellen Kandidaten gesendet. 
+
+Der Staatschef hat den Namen eines potenziellen Koministen aus dem Senat ausgezeichnet. 
+
+Die Demokratische Partei ist mit der Handlungen des Staatschefs sehr unzufrieden. Demokraten sind verpflichtet, die Regierung zu unterstützen, aber das Vertrauen in die Regierung ist bei den Demokraten stark gemindert.
+
+Die Wahlen zum Senat haben bereits im Oktober 2019 erfolgt. Die Republikaner und die Demokraten haben sich im Vorfeld der Wahlen stark auf die Wählerauflösung und die Regierungsstabilität konzentriert. 
+
+Die Handlungen des Staatschefs sind mit den Wahlen zum Senat verbunden, die für das Jahr 2020 geplant sind.
+
+Original text:
+Der Staatschef hat zugleich aber das Recht, vorläufig Minister während mindestens zehn Tage langen Sitzungspausen des Senats einz
+
+-----------------------------------------------------
+Row idx=3, complexity=pop_science
+Original English : There is no question that climate change is intensifying heatwaves in South Asia. Continuous attribution studies that examine the connections between weather phenomena and climate change confirm this. For example, a report by World Weather Attribution found that the likelihood of heatwaves has increased 30-fold since the 19th century. Additionally, an attribution study conducted by the UK's Met Office reveals that the risk of unprecedented heatwaves in India and Pakistan has increased 100-fold due to climate change.
+Translation Eng->De: " We will not tolerate any form of discrimination" the Prime Minister of Bangladesh said at the very beginning of the UN Climate Conference in Dhaka.  The UNFCCC secretariat has called for increased awareness of the climate crisis and the need for sustainable development.  The conference will take place between September 2 and September 14.  The meeting of the Climate and Environment Ministers will be held on September 8.  The international cooperation is a key factor in mitigating climate change.  The Indian government is taking measures to reduce carbon emissions in the climate change conference in New Delhi.  The United States also has a significant role to play in reducing greenhouse gas emissions.  The African countries are also actively engaged in the global fight against climate change.  The Global South has been hit hard by climate change.  The effects of climate change are most evident in the Global South.  The Global South is experiencing rapid urbanization,  and the population is growing rapidly.  The consequences of climate change will be most evident in the Global South.  "We will not tolerate any form of discrimination" , the Prime Minister of Bangladesh said at the UN Climate Conference in Dhaka.  The conference will be the first time that the Global South
+
+Original German  : Dass der Klimawandel die Hitzewellen in Südasien verstärkt, steht außer Frage. Immer neue Attributionsstudien, die Zusammenhänge zwischen Wetterphänomenen und dem Klimawandel untersuchen, belegen das. So ergab ein Bericht von World Weather Attribution, dass die Wahrscheinlichkeit für Hitzewellen seit dem 19. Jahrhundert 30-fach erhöht ist. Und eine vom britischen Met Office durchgeführte Attributionsstudie zeigt auf, dass die Gefahr beispielloser Hitzewellen in Indien und Pakistan durch den Klimawandel um das Hundertfache gestiegen ist.
+Translation De->Eng: (Die Quelle für diese Informationen ist die Weltwetter- und Klimarechercheinstitut World Weather Attribution.)
+Translation:
+Climate change increases heatwaves in South Asia, there is no doubt about it. New attribution studies investigate the connections between weather phenomena and climate change. For example, a World Weather Attribution report shows that the probability of heatwaves has increased 30-fold since the 19th century. And a study by the British Met Office shows that the risk of extreme heatwaves in India and Pakistan has increased by a factor of 100 due to climate change. (Source: The World Weather and Climate Research Institute, World Weather Attribution.)
+
+-----------------------------------------------------
+Row idx=4, complexity=science
+Original English : The DSA-110, situated at the Owens Valley Radio Observatory (OVRO) near Bishop, California, is a radio interferometer built for simultaneous FRB discovery and arcsecond-scale localization. The DSA-110 underwent science commissioning and performed observations between February 2022 and March 2024 with a coherent core of 48 4.65-m antennas used for FRB searching combined with 15 outrigger antennas (maximum baseline of 2.5 km) used for localization. Each antenna is equipped with a dual-polarization ambient-temperature 1.28-1.53-GHz receiver. A custom low-noise amplifier design delivering 7 K noise temperature13 was central to achieving sensitivity to 1.9 Jy ms FRBs (for millisecond-duration events). A real-time search for FRBs with 0.262-ms sampling and a dispersion measure (DM) range up to 1,500 pc cm-3 was conducted.
+Translation Eng->De: The DSA-110 was designed to handle 1000 simultaneous observations per second. 
+
+For the purpose of this text, I have chosen to translate the following parts:
+- DSA-110
+- Owens Valley Radio Observatory (OVRO)
+- FRB
+- millisecond-duration events
+- 1.9 Jy ms
+- dispersion measure (DM)
+- 0.262-ms sampling
+- 1000 simultaneous observations per second
+
+Here is the translation:
+
+Das DSA-110, gelegen am Owens Valley Radio Observatory (OVRO) in Bishop, Kalifornien, ist ein Radiointerferometer für gleichzeitige FRB-Erkennung und präzise Lokalisierung auf Skala 1/100.000. Das DSA-110 durchlief die Wissenschaftskommission und führte Beobachtungen von Februar 2022 bis März 2024 mit einer kohärenten Kern aus 48 4,65-m Antennen zum FRB-Suchdurchlauf kombiniert mit 15 Außentürmen (max. Baseline von 2,5 km) zum Lokalisierungsprozess. Jede Antenne
+
+Original German  : Der DSA-110, der sich am Owens Valley Radio Observatory (OVRO) in der Nähe von Bishop, Kalifornien, befindet, ist ein Radio-Interferometer, das für die gleichzeitige Entdeckung von FRBs und deren Lokalisierung im Bogensekundenmaßstab gebaut wurde. Der DSA-110 durchlief die wissenschaftliche Inbetriebnahme und führte Beobachtungen zwischen Februar 2022 und März 2024 durch. Er nutzte einen kohärenten Kern von 48 Antennen mit 4,65 m Durchmesser für die FRB-Suche sowie 15 Auslegerantennen (maximale Basislinie von 2,5 km) für die Lokalisierung. Jede Antenne ist mit einem dual-polarisierten 1,28–1,53-GHz-Empfänger bei Umgebungstemperatur ausgestattet. Ein speziell entworfener rauscharmer Verstärker, der eine Rauschtemperatur von 7 K liefert, war zentral für die Erreichung der Empfindlichkeit gegenüber FRBs von 1,9 Jy ms (für millisekundendauernde Ereignisse). Eine Echtzeitsuche nach FRBs mit einer Abtastrate von 0,262 ms und einem Dispersionsmaß (DM) von bis zu 1.500 pc cm⁻³ wurde durchgeführt.
+Translation De->Eng: 2023 wurde eine neue Formel für die Berechnung der DM-Werte von FRBs entwickelt, die auf dem Verständnis der Anisotropie im radiointensiven Interstellarmedium entwickelt wurde. Die Entwicklung und der Betrieb des DSA-110 sind eng mit der Forschungsgruppe für Radioastronomie an der Universität California, Berkeley, verbunden.
+
+Translation:
+At the Owens Valley Radio Observatory (OVRO) in Bishop, California, there is a radio interferometer built to discover and localise Fast Radio Bursts (FRBs) in the millisecond scale. The DSA-110 passed scientific commissioning and made observations between February 2022 and March 2024. It used a coherent core of 48 antennas with 4.65-m
+
+-----------------------------------------------------

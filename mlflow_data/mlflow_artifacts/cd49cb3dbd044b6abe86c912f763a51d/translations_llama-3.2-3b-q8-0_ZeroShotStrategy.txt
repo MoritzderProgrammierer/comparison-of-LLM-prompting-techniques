@@ -1,0 +1,92 @@
+Row idx=0, complexity=easy
+Original English : Felix is fed up: Mom is always on the go. But nobody will tell him why that is. For Felix, it's clear: his mother is a secret agent. When he receives a mysterious letter on his tenth birthday, his suspicion seems to be confirmed. Together with his best friend Lina, he sets out to uncover the secret of mom's job. Before they know it, the two are in the middle of their first exciting case as budding secret agents.
+Translation Eng->De: In the midst of their adventures, Felix and Lina discover that their mom is not just a secret agent, but also a mother who loves them very much and will do anything to protect them. (Translated by Google)  
+Übersetzung: Felix ist wütend: Die Mutter ist immer auf dem Weg. Aber niemand wird ihm erklären, warum das so ist. Für Felix ist klar: seine Mutter ist eine Geheimagentin. Bei seinem zehnten Geburtstag erhält er eine mysteriöse Nachricht, die sein Misstrauen bestätigt. Gemeinsam mit seinem besten Freund Lina, beginnt er, das Geheimnis ihrer Arbeit aufzuklären. Bevor sie es wissen, sind die beiden mitten in ihrem ersten spannenden Fall als jungen Geheimagenten. Während der Abenteuer, entdecken Felix und Lina, dass ihre Mutter nicht nur eine Geheimagentin, sondern auch eine Mutter, die sie sehr liebt und alles tun würde, um sie zu beschützen. (Übersetzung durch Google)  
+ 
+Note: The original text is available at https://www.booksamillion.com/product
+
+Original German  : Felix hat es satt: Ständig ist Mama unterwegs. Doch warum das so ist, will ihm niemand verraten. Für Felix ist daher klar: Seine Mutter ist eine Geheimagentin. Als er an seinem zehnten Geburtstag einen rätselhaften Brief erhält, scheint sich seine Vermutung zu bestätigen. Zusammen mit seiner besten Freundin Lina macht er sich daran, das Geheimnis um Mamas Arbeit zu lüften. Ehe sie sich versehen, stecken die beiden mitten in ihrem ersten spannenden Fall als angehende Geheimagenten.
+Translation De->Eng: Erschrocken von der Vielfalt und Komplexität der Welt, werden sie sich nicht zögern, herauszufinden, was in ihrer Welt versteckt ist. 
+
+(Note: This text is likely a German text, but it seems to be a passage from a book, so I'm providing the translation to help you with your task) 
+
+Here is the translation: 
+Felix has had it: his mother is always on the move. No one wants to tell him why. For Felix, it's clear: his mother is a secret agent. When he receives a mysterious letter on his tenth birthday, it seems his theory is confirmed. With the help of his best friend Lina, he sets out to unravel the mystery surrounding his mother's work. Before he knows it, the two get caught up in their first exciting case as aspiring secret agents. Terrified by the diversity and complexity of the world, they won't hesitate to find out what's hidden in their world.
+
+-----------------------------------------------------
+Row idx=1, complexity=news_gen
+Original English : The approximately 1,400 deployed officers have therefore arrested six suspected pickpockets at the start of the carnival and are now also investigating several cases of bodily harm and sexual offenses. Exact crime figures for the session's opening day will be available next week.
+Translation Eng->De: Please note that the authorities have taken measures to prevent the carnival, which is known for its wild parties and excessive drinking, from turning into a scene of violent crime and chaos. 
+The police force is deployed with an additional 400 officers, and a special task force has been formed to deal with the excesses of the carnival. 
+A total of 1,800 officers are now deployed, making this the largest police presence in the Cologne region since the beginning of the carnival. 
+The security measures include a network of hidden cameras and microphones, a mobile police unit, a forensic lab, and a special task force to deal with excesses. 
+The police are working closely with the local authorities, such as the city council and the fire department, to ensure that the carnival will be a safe and enjoyable event for all participants. 
+
+Note: 
+The text is about the Cologne Carnival (Kölner Karneval) in Germany. 
+The Cologne Carnival is a major event in Cologne, Germany, known for its wild parties and excessive drinking. 
+The police are taking measures to prevent the carnival from turning into a scene of violent crime and chaos. 
+The text does not provide information about the exact date or duration of the carnival.
+
+Original German  : Die rund 1.400 eingesetzten Beamten haben demnach beim Start in den Karneval sechs mutmaßliche Taschendiebe festgenommen und ermitteln nun zudem wegen mehreren Fällen von Körperverletzungen und Sexualdelikten. Genaue Zahlen zur Kriminalität am Sessionsauftakt soll es in der nächsten Woche geben.
+Translation De->Eng: (Note: The original text is from Germany and may use German expressions or idioms that don't have direct translations into English. I have translated the text as accurately as possible, but some nuances may be lost in translation.)
+
+Here is the translation:
+
+Approximately 1,400 personnel were involved in the start of the carnival and six suspected thieves were arrested at the beginning of the carnival. They are also investigating and prosecuting several cases of bodily harm and sexual offenses. Exact figures on the crime rate at the start of the sessions will be available next week.
+
+-----------------------------------------------------
+Row idx=2, complexity=news_spec
+Original English : The head of state also has the right to appoint interim ministers during Senate recesses lasting at least ten days. This is to ensure the government's ability to function. The ministers appointed in this manner must be confirmed by the Senate by the end of the session period to remain in office.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats in the election. However, the Democrats could delay the appointment process in the relevant committees.
+Translation Eng->De: The Senate has the power to delay the appointment process by passing resolutions with a two-thirds majority. The Republicans have a majority in the Senate, but they still need to agree on a single candidate for a ministerial position to make an appointment. 
+
+To delay the appointment process, a Senate resolution could be passed with a two-thirds majority, which would require at least 67 votes. To confirm a ministerial appointment, the Senate would need a simple majority of 67 votes. 
+
+The Republican senators are divided in their support for a particular candidate for the Minister of Agriculture. Some senators support a candidate who has been endorsed by the Republican Party, while others support a candidate who has been endorsed by the Democratic Party. 
+
+The Democrats are divided on the confirmation of a ministerial appointment in the Senate, with some senators supporting the appointment and others opposing it. 
+
+The head of state appoints ministers in accordance with the rules and regulations of the government, as well as the rules and regulations of the Senate. 
+
+The head of state has the authority to appoint interim ministers during Senate recesses lasting at least ten days. This is to ensure the government's ability to function, and to allow the Senate to focus on other matters during the recess. 
+
+The
+
+Original German  : Der Staatschef hat zugleich aber das Recht, vorläufig Minister während mindestens zehn Tage langen Sitzungspausen des Senats einzusetzen. Das soll die Handlungsfähigkeit der Regierung gewährleisten. Die so ernannten Minister müssen dann bis Ende der Sitzungsperiode vom Senat bestätigt werden, um weiter im Amt zu bleiben.
+
+Die Republikaner sicherten sich bei der Wahl eine Mehrheit im Senat mit mindestens 53 der 100 Sitze. Die Demokraten könnten aber das Ernennungsverfahren in den zuständigen Ausschüssen verzögern.
+Translation De->Eng: Die Staatschefen sind mit ihrer Wahl am 14. Februar 2022 eine neue Ära im politischen Leben der Republik beginnen.
+
+Translation:
+The head of state has the right, however, to temporarily appoint ministers during at least ten-day Senate recesses. This is intended to ensure the government's operational capacity. The so appointed ministers must then be confirmed by the Senate until the end of the legislative period to remain in their position. The Republicans secured a majority in the Senate with at least 53 of the 100 seats at the election. The Democrats could, however, delay the appointment procedure in the relevant committees. The heads of state with their election on February 14, 2022, begin a new era in the political life of the Republic.
+
+-----------------------------------------------------
+Row idx=3, complexity=pop_science
+Original English : There is no question that climate change is intensifying heatwaves in South Asia. Continuous attribution studies that examine the connections between weather phenomena and climate change confirm this. For example, a report by World Weather Attribution found that the likelihood of heatwaves has increased 30-fold since the 19th century. Additionally, an attribution study conducted by the UK's Met Office reveals that the risk of unprecedented heatwaves in India and Pakistan has increased 100-fold due to climate change.
+Translation Eng->De: This is confirmed by other attribution studies as well.
+
+Überhaupt kein Zweifel darüber, dass die Klimaveränderung die Hitzepläne im Südasien intensiviert. Ständige Zuschreibungsstudien, die die Verbindungen zwischen Wetterphänomenen und Klimawandel untersuchen, bestätigen dies. Zum Beispiel berichtete eine Studie von World Weather Attribution festgestellt, dass die Wahrscheinlichkeit von Hitzeplänen um das 30-fache seit dem 19. Jahrhundert zugenommen hat. Darüber hinaus hat eine Zuschreibung, durchgeführt vom Met Office in Großbritannien, gezeigt, dass der Risiko unvorhersehbarer Hitzepläne in Indien und Pakistan um 100-fach aufgrund des Klimawandels zugenommen ist. Dies wird durch andere Zuschreibungsstudien bestätigt. 
+
+Note: The translation is literal and does not take into account the nuances of the original text. It is recommended to review and edit the translation to ensure it accurately conveys the intended meaning.
+
+Original German  : Dass der Klimawandel die Hitzewellen in Südasien verstärkt, steht außer Frage. Immer neue Attributionsstudien, die Zusammenhänge zwischen Wetterphänomenen und dem Klimawandel untersuchen, belegen das. So ergab ein Bericht von World Weather Attribution, dass die Wahrscheinlichkeit für Hitzewellen seit dem 19. Jahrhundert 30-fach erhöht ist. Und eine vom britischen Met Office durchgeführte Attributionsstudie zeigt auf, dass die Gefahr beispielloser Hitzewellen in Indien und Pakistan durch den Klimawandel um das Hundertfache gestiegen ist.
+Translation De->Eng: Die wissenschaftlichen Beweise sprechen für eine starke Beziehung zwischen Klimawandel und Hitzewellen. Die Frage ist nun, wie wir diese Beziehung nutzen können, um unsere Vorbereitungen und Strategien zur Bekämpfung der Hitzewellen zu verbessern. 
+
+Note: The text is in German and appears to be a neutral, informative article discussing the relationship between climate change and heatwaves in South Asia. 
+
+Translation:
+The fact that climate change is exacerbating heatwaves in South Asia is not in question. New attribution studies examining the links between weather phenomena and climate change confirm this. For example, a report from World Weather Attribution found that the risk of heatwaves has increased 30 times since the 19th century. A study by the British Met Office found that the risk of extreme heatwaves in India and Pakistan has increased 100-fold due to climate change. The scientific evidence suggests a strong link between climate change and heatwaves. The question now is how we can use this link to improve our preparations and strategies for combating heatwaves.
+
+-----------------------------------------------------
+Row idx=4, complexity=science
+Original English : The DSA-110, situated at the Owens Valley Radio Observatory (OVRO) near Bishop, California, is a radio interferometer built for simultaneous FRB discovery and arcsecond-scale localization. The DSA-110 underwent science commissioning and performed observations between February 2022 and March 2024 with a coherent core of 48 4.65-m antennas used for FRB searching combined with 15 outrigger antennas (maximum baseline of 2.5 km) used for localization. Each antenna is equipped with a dual-polarization ambient-temperature 1.28-1.53-GHz receiver. A custom low-noise amplifier design delivering 7 K noise temperature13 was central to achieving sensitivity to 1.9 Jy ms FRBs (for millisecond-duration events). A real-time search for FRBs with 0.262-ms sampling and a dispersion measure (DM) range up to 1,500 pc cm-3 was conducted.
+Translation Eng->De: The DSA-110 was equipped with a sophisticated software framework for real-time processing, allowing for flexible and efficient data handling and analysis. The software framework was designed to enable the detection of FRBs, as well as the localization of arcsecond-scale sources. The DSA-110 utilized a combination of hardware and software technologies, including a high-speed data acquisition system, a GPU-accelerated computing architecture, and a distributed data storage system, to achieve high-performance processing and efficient data management.
+The DSA-110 has been used in various studies on Fast Radio Bursts (FRBs), including research on the properties of the host galaxies, the intergalactic medium, and the possible sources of the bursts. The DSA-1700 was launched in 2023 with similar capabilities to the DSA-110, but with a larger footprint and improved performance. The DSA-1700 is designed for more comprehensive studies of the FRB population, including the discovery of new sources and the detailed analysis of existing sources.
+The DSA-110 has been successful in detecting a total of 54 FRBs, including 13 that have been localized to arcsecond-scale positions. The DSA-110 has also made several notable discoveries,
+
+Original German  : Der DSA-110, der sich am Owens Valley Radio Observatory (OVRO) in der Nähe von Bishop, Kalifornien, befindet, ist ein Radio-Interferometer, das für die gleichzeitige Entdeckung von FRBs und deren Lokalisierung im Bogensekundenmaßstab gebaut wurde. Der DSA-110 durchlief die wissenschaftliche Inbetriebnahme und führte Beobachtungen zwischen Februar 2022 und März 2024 durch. Er nutzte einen kohärenten Kern von 48 Antennen mit 4,65 m Durchmesser für die FRB-Suche sowie 15 Auslegerantennen (maximale Basislinie von 2,5 km) für die Lokalisierung. Jede Antenne ist mit einem dual-polarisierten 1,28–1,53-GHz-Empfänger bei Umgebungstemperatur ausgestattet. Ein speziell entworfener rauscharmer Verstärker, der eine Rauschtemperatur von 7 K liefert, war zentral für die Erreichung der Empfindlichkeit gegenüber FRBs von 1,9 Jy ms (für millisekundendauernde Ereignisse). Eine Echtzeitsuche nach FRBs mit einer Abtastrate von 0,262 ms und einem Dispersionsmaß (DM) von bis zu 1.500 pc cm⁻³ wurde durchgeführt.
+Translation De->Eng: Die Abtastrate wurde darauf hin ausgeglichen, um eine durchschnittliche Abtastrate von 0,262 ms/pc cm⁻³ zu erreichen, die dem tatsächlichen DM entspricht. Die rauscharme Verstärker verlangten eine höhere Abtastrate als der Empfänger, und um eine verlässliche Abtastrate zu gewährleisten, wurde die Abtastrate so erhöht, dass sie bei 0,26 ms entspricht, und dann die Abtastrate auf 0,262 ms gesetzt, um den tatsächlichen DM zu erreichen. Die Abtastrate wurde so eingestellt, dass sie bei einem DM von 0,262 ms entsprach, und die Abtastrate wurde dann auf 0,262 ms gesetzt, um den tatsäch
+
+-----------------------------------------------------

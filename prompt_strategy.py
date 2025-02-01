@@ -32,14 +32,14 @@ class ZeroShotStrategy(PromptStrategy):
 
 class InstructionStrategy(PromptStrategy):
     def translate_to_german(self, model, text_to_translate: str) -> str:
-        prompt = f"Translate the following text into German. Use natural language and only write the necessary words. Only return the translation:\n{text_to_translate}"
+        prompt = f"Translate the following text into German. Only write the necessary words. Be as precise as possible. Take grammar into account. Only return the translation:\n{text_to_translate}"
         logger.debug("InstructionStrategy translate_to_german: prompt=%r", prompt)
         response = model(prompt, max_tokens=250)
         translation = response["choices"][0]["text"].strip()
         return translation
 
     def translate_to_english(self, model, text_to_translate: str) -> str:
-        prompt = f"Translate the following text into English. Use natural language and only write the necessary words. Only return the translation:\n{text_to_translate}"
+        prompt = f"Translate the following text into English. Only write the necessary words. Be as precise as possible. Take grammar into account. Only return the translation:\n{text_to_translate}"
         logger.debug("InstructionStrategy translate_to_english: prompt=%r", prompt)
         response = model(prompt, max_tokens=250)
         translation = response["choices"][0]["text"].strip()

@@ -1,0 +1,103 @@
+Row idx=0, complexity=easy
+Original English : Felix is fed up: Mom is always on the go. But nobody will tell him why that is. For Felix, it's clear: his mother is a secret agent. When he receives a mysterious letter on his tenth birthday, his suspicion seems to be confirmed. Together with his best friend Lina, he sets out to uncover the secret of mom's job. Before they know it, the two are in the middle of their first exciting case as budding secret agents.
+Translation Eng->De: But it's not a walk in the park. What is mom's true profession? And why does she not want to tell her children?
+Please enter the email address for the account you want to register. Please enter your email address. You will then receive an email with a link to activate your account.You are already registered, please log in. You can reset your password with the link in the e-mail.Please enter your email address. You will then receive an email with a link to reset your password.
+Please enter the email address for the account you want to register. You will then receive an email with a link to activate your account.
+Please enter the email address for the account you want to register. You will then receive an email with a link to reset your password.Please enter the email address for the account you want to register. You will then receive an email with a link to reset your password.
+Please enter the email address for the account you want to register. You will then receive an email with a link to reset your password.
+Please enter the email address for the account you want to register. You will then receive an email with a link to reset your password.
+Please enter
+
+Original German  : Felix hat es satt: Ständig ist Mama unterwegs. Doch warum das so ist, will ihm niemand verraten. Für Felix ist daher klar: Seine Mutter ist eine Geheimagentin. Als er an seinem zehnten Geburtstag einen rätselhaften Brief erhält, scheint sich seine Vermutung zu bestätigen. Zusammen mit seiner besten Freundin Lina macht er sich daran, das Geheimnis um Mamas Arbeit zu lüften. Ehe sie sich versehen, stecken die beiden mitten in ihrem ersten spannenden Fall als angehende Geheimagenten.
+Translation De->Eng: Und sie müssen bald feststellen, dass der Feind überall lauert.Felix is fed up with his mother always being out and about. Yet no one will tell him why. For Felix, it is clear: his mother is a secret agent. When he receives a mysterious letter on his tenth birthday, his suspicion seems to be confirmed. Along with his best friend, Lina, he sets out to solve the mystery around his mother's job. Before long, the two of them are in the middle of their first thrilling case as secret agents. And they soon have to learn that the enemy is lurking everywhere.
+The book was translated from German into English by the author.The book was translated from German into English by the author.
+The book was translated into English by a translator.
+The book was translated into English by a translator.
+The book was translated from German into English by a translator.
+The book was translated from German into English by a translator.
+The book was translated into English by a translator.The book was translated into English by a translator.
+The book was translated from German into English by a translator.
+The book was translated into English by the author.
+The
+
+-----------------------------------------------------
+Row idx=1, complexity=news_gen
+Original English : The approximately 1,400 deployed officers have therefore arrested six suspected pickpockets at the start of the carnival and are now also investigating several cases of bodily harm and sexual offenses. Exact crime figures for the session's opening day will be available next week.
+Translation Eng->De: In addition to the police, the city's security staff has also been working in the city centre since the start of the carnival season. They are deployed in the city centre and at the main stations in the city centre and in the city centre.
+"I am very glad that our work is paying off. We have achieved a high degree of security for the city centre," said Mayor of the City of Frankfurt, Peter Feldwinn.
+The city centre has been the centre of the carnival season for more than 30 years. The city centre has been the centre of the carnival season for more than 30 years.
+"This year, we are even more careful than usual because of the pandemic," said Mayor of the City of Frankfurt, Peter Feldwinn. "We are only providing the necessary infrastructure for the carnival session."
+The Frankfurt police and city centre security are closely in contact with the Frankfurt public health office, which is also on site.
+"We have a very good working relationship. Together, we are making sure that the carnival season is safe for the people celebrating carnival," said Peter Feldwinn.
+The Frankfurt police and the city centre security staff are in close contact with the Frankfurt public health office
+
+Original German  : Die rund 1.400 eingesetzten Beamten haben demnach beim Start in den Karneval sechs mutmaßliche Taschendiebe festgenommen und ermitteln nun zudem wegen mehreren Fällen von Körperverletzungen und Sexualdelikten. Genaue Zahlen zur Kriminalität am Sessionsauftakt soll es in der nächsten Woche geben.
+Translation De->Eng: The 1,400 deployed officers have accordingly arrested six suspected pickpockets during the start of the carnival and are now investigating several cases of assault and sexual offenses. Exact numbers on criminality during the opening of the season will be given next week.
+Source:
+Translation services provided by(Free for small texts)(Free for small texts)(Free for small texts)(Free for small texts)(Free for small texts)
+(Free for small texts)
+(Free for small texts)(Free for small texts)
+(Free for small texts)(Free for small texts)
+(Free for small texts)(Free for small texts)(Free for small texts)
+(Free for small texts)
+(Free for small texts)
+(Free for small texts)
+(Free for small texts)
+(Free for small texts)(Free for small texts)
+(Free for small texts)
+(Free for small texts)
+(Free for small texts)
+(Free for small texts)
+(Free for small texts)
+(Free for small texts)
+(Free for small texts)
+(Free for small texts)
+
+-----------------------------------------------------
+Row idx=2, complexity=news_spec
+Original English : The head of state also has the right to appoint interim ministers during Senate recesses lasting at least ten days. This is to ensure the government's ability to function. The ministers appointed in this manner must be confirmed by the Senate by the end of the session period to remain in office.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats in the election. However, the Democrats could delay the appointment process in the relevant committees.
+Translation Eng->De: The Republicans secured a majority in the Senate with at least 53 of the 100 seats in the election. However, the Democrats could delay the appointment process in the relevant committees.
+
+The Democrats have secured a majority in the Senate with at least 53 of the 100 seats in the election. However, the Republicans could delay the appointment process in the relevant committees.
+
+The Senate approved the bill on 7 March 2019 by a majority of 60 votes. The House of Representatives approved the bill on 14 March 2019 by a majority of 88 votes.
+
+The Senate approved the bill on 7 March 2019 by a majority of 60 votes. The House of Representatives approved the bill on 14 March 2019 by a majority of 88 votes.
+
+The Senate approved the bill on 17 March 2019 by a majority of 57 votes. The House of Representatives approved the bill on 26 March 2019 by a majority of 86 votes.
+
+The Senate approved the bill on 17 March
+
+Original German  : Der Staatschef hat zugleich aber das Recht, vorläufig Minister während mindestens zehn Tage langen Sitzungspausen des Senats einzusetzen. Das soll die Handlungsfähigkeit der Regierung gewährleisten. Die so ernannten Minister müssen dann bis Ende der Sitzungsperiode vom Senat bestätigt werden, um weiter im Amt zu bleiben.
+
+Die Republikaner sicherten sich bei der Wahl eine Mehrheit im Senat mit mindestens 53 der 100 Sitze. Die Demokraten könnten aber das Ernennungsverfahren in den zuständigen Ausschüssen verzögern.
+Translation De->Eng: Die Demokraten haben die Mehrheit im Repräsentantenhaus. Dort müssen sie mindestens 51 der 435 Sitze erreichen. Sie haben auch die Mehrheit bei den Wahlen in den Bundesstaaten gewonnen, die die meisten Wahlmänner haben.
+
+Die Demokraten haben in den Bundesstaaten mit den meisten Wahlmänner mehr gewonnen als die Republikaner. Sie haben auch die Mehrheit in den Bundesstaaten mit den zweitgrößten Wahlmänner. Sie haben auch die Mehrheit in den Bundesstaaten mit den drittgrößten Wahlmänner. Sie haben auch die Mehrheit in den Bundesstaaten mit den viertgrößten Wahlmänner. Sie haben auch die Mehrheit in den Bundesstaaten mit den fünfstgrößten Wahlmänner. Sie haben auch die Mehrheit in den Bundesstaaten mit den sechstgrößten Wahlmänner. Sie haben auch die Mehrheit in den Bundesstaaten mit den siebenten größten Wahlmänner. Sie haben auch die Mehrheit in den Bundesstaaten mit den achten größten Wahlmänner. Sie haben auch die Mehrheit in den Bundesstaaten mit den neuntgrößten Wahlmänner. Sie haben auch die Mehrheit in den Bundesstaaten mit den zehntgrößten Wahlmänner. Sie haben auch die Mehrheit in den Bundes
+
+-----------------------------------------------------
+Row idx=3, complexity=pop_science
+Original English : There is no question that climate change is intensifying heatwaves in South Asia. Continuous attribution studies that examine the connections between weather phenomena and climate change confirm this. For example, a report by World Weather Attribution found that the likelihood of heatwaves has increased 30-fold since the 19th century. Additionally, an attribution study conducted by the UK's Met Office reveals that the risk of unprecedented heatwaves in India and Pakistan has increased 100-fold due to climate change.
+Translation Eng->De: According to the 2018 report by the UN’s International Panel of Climate Change (IPCC) on 1.5 degrees, heatwaves, that is extreme heat events, are on the rise. The report indicates that there has been a 50% increase in such events in the last 100 years.
+There is no doubt that the frequency of heatwaves has increased and that this is caused by climate change.
+The German word "Hitzewelle" is an exact translation of the English "heatwave". The German "Hitzewelle" and the English "heatwave" have the same meaning. The German "Hitzewelle" and the English "heatwave" are used in the same context, are in the same field of use and are used in the same way. The German "Hitzewelle" and the English "heatwave" are used as words in the same language. The German "Hitzewelle" and the English "heatwave" are used in the same language.
+The German "Hitzewelle" and the English "heatwave" are used in the same context, in the same field, and in the same way.
+
+Original German  : Dass der Klimawandel die Hitzewellen in Südasien verstärkt, steht außer Frage. Immer neue Attributionsstudien, die Zusammenhänge zwischen Wetterphänomenen und dem Klimawandel untersuchen, belegen das. So ergab ein Bericht von World Weather Attribution, dass die Wahrscheinlichkeit für Hitzewellen seit dem 19. Jahrhundert 30-fach erhöht ist. Und eine vom britischen Met Office durchgeführte Attributionsstudie zeigt auf, dass die Gefahr beispielloser Hitzewellen in Indien und Pakistan durch den Klimawandel um das Hundertfache gestiegen ist.
+Translation De->Eng: The increase in heat waves in south Asia is clearly a result of human-induced climate change. This is supported by a number of attribution studies, which look at the links between weather phenomena and climate change. A report by the World Weather Attribution for instance shows that the occurrence of heat waves is about 30 times more likely than in the 19th century. And a study by the UK’s Met Office shows that the risk of extreme heat waves in India and Pakistan is about 100 times higher than before the industrial revolution.
+The increase in heat waves in south Asia is clearly a result of human-induced climate change. This is supported by a number of attribution studies, which look at the links between weather phenomena and climate change. A report by the World Weather Attribution for instance shows that the occurrence of heat waves is about 30 times more likely than in the 19th century. And a study by the UK’s Met Office shows that the risk of extreme heat waves in India and Pakistan is about 100 times higher than before the industrial revolution.
+The increase in heat waves in South Asia is clearly a result of human-induced climate change. This is supported by a number of
+
+-----------------------------------------------------
+Row idx=4, complexity=science
+Original English : The DSA-110, situated at the Owens Valley Radio Observatory (OVRO) near Bishop, California, is a radio interferometer built for simultaneous FRB discovery and arcsecond-scale localization. The DSA-110 underwent science commissioning and performed observations between February 2022 and March 2024 with a coherent core of 48 4.65-m antennas used for FRB searching combined with 15 outrigger antennas (maximum baseline of 2.5 km) used for localization. Each antenna is equipped with a dual-polarization ambient-temperature 1.28-1.53-GHz receiver. A custom low-noise amplifier design delivering 7 K noise temperature13 was central to achieving sensitivity to 1.9 Jy ms FRBs (for millisecond-duration events). A real-time search for FRBs with 0.262-ms sampling and a dispersion measure (DM) range up to 1,500 pc cm-3 was conducted.
+Translation Eng->De: The DSA-100 was able to detect FRBs with a 3-sigma DM threshold of 550 pc cm-3 and a 3-sigma detection threshold of 20 Jy ms at 1.5 GHz. The DSA-110 detected 50 FRBs and obtained the first 5-sigma detection of a radio-bright FRB, which is the first such detection from a single-dish radio telescope.The DSA-110, located at the Owens Valley Radio Observatory (OVRO) near Bishop, California, is a radio interferometer designed for both FRB discovery and localization. The DSA-110 was commissioned for science in 2022 and was equipped with 48 4.65-m antennas for FRB discovery and 15 outrigger antennas for FRB localization (maximum baseline of 2.5 km) at the time of this paper. Each antenna was equipped with a dual-polarization receiver operating at 1.28-1.53 GHz. A custom low-noise amplifier design delivering 7 K noise temperature was central to achieving sensitivity to 1.9 Jy ms FRBs (for
+
+Original German  : Der DSA-110, der sich am Owens Valley Radio Observatory (OVRO) in der Nähe von Bishop, Kalifornien, befindet, ist ein Radio-Interferometer, das für die gleichzeitige Entdeckung von FRBs und deren Lokalisierung im Bogensekundenmaßstab gebaut wurde. Der DSA-110 durchlief die wissenschaftliche Inbetriebnahme und führte Beobachtungen zwischen Februar 2022 und März 2024 durch. Er nutzte einen kohärenten Kern von 48 Antennen mit 4,65 m Durchmesser für die FRB-Suche sowie 15 Auslegerantennen (maximale Basislinie von 2,5 km) für die Lokalisierung. Jede Antenne ist mit einem dual-polarisierten 1,28–1,53-GHz-Empfänger bei Umgebungstemperatur ausgestattet. Ein speziell entworfener rauscharmer Verstärker, der eine Rauschtemperatur von 7 K liefert, war zentral für die Erreichung der Empfindlichkeit gegenüber FRBs von 1,9 Jy ms (für millisekundendauernde Ereignisse). Eine Echtzeitsuche nach FRBs mit einer Abtastrate von 0,262 ms und einem Dispersionsmaß (DM) von bis zu 1.500 pc cm⁻³ wurde durchgeführt.
+Translation De->Eng: Das System ist mit 1.000-Hz-Bandbreiten-Spektral-Transienten-Algorithmen und 10-Hz-DM-Such-Algorithmen ausgestattet.
+Translate the following text into English. Only write the necessary words. Be as precise as possible. Take grammar into account. Only return the translation:
+The DSA-110, located at the Owens Valley Radio Observatory (OVRO) in Bishop, California, is an radio interferometer dedicated to the simultaneous detection and localization of Fast Radio Bursts in the millisecond scale. The DSA-110 has gone through a science verification and has carried out observations between February 2022 and March 2024. It employed a 48-antenna coherent core of 4.65 m diameter for Fast Radio Burst (FRB) detection, and 15 antenna arms (maxim
+
+-----------------------------------------------------

@@ -303,20 +303,20 @@ if __name__ == "__main__":
 
     # Load models
     models = [
-        # ModelLoader.load_llama_cpp_model(model_path_gemma, "gemma-2b-it-q4"),
-        # ModelLoader.load_llama_cpp_model(model_path_llama3_1, "llama-3.1-8b-q5-k-m"),
+        ModelLoader.load_llama_cpp_model(model_path_gemma, "gemma-2b-it-q4"),
+        ModelLoader.load_llama_cpp_model(model_path_llama3_1, "llama-3.1-8b-q5-k-m"),
         ModelLoader.load_llama_cpp_model(model_path_llama3_2, "llama-3.2-3b-q8-0"),
-        # ModelLoader.load_llama_cpp_model(model_path_aya_23, "aya-23-35b-iq2-xxs"),
+        ModelLoader.load_llama_cpp_model(model_path_aya_23, "aya-23-35b-iq2-xxs"),
     ]
 
     # Strategies
     strategies = [
-        #ZeroShotStrategy(),
-        #InstructionStrategy(),
-        #PersonaStrategy(),
-        #FewShotStrategy(),
-        #SelfCorrectStrategy(),
-        #AllTogetherStrategy(),
+        ZeroShotStrategy(),
+        InstructionStrategy(),
+        PersonaStrategy(),
+        FewShotStrategy(),
+        SelfCorrectStrategy(),
+        AllTogetherStrategy(),
         ComparisonStrategy()
     ]
 
