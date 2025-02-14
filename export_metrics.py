@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 experiment_id = "213424715458696362"
-parent_run_id = "419b52fbcc094e1988be22d64825e44d"
+parent_run_id = "0cc114ea31bb4e9487a0c1e5ed03335b"
 
 client = mlflow.tracking.MlflowClient()
 
@@ -42,9 +42,9 @@ all_runs_data.extend([extract_run_data(run) for run in nested_runs])
 
 df = pd.json_normalize(all_runs_data)
 
-df.to_csv('mlflow_data/mlflow_all_runs_data.csv', index=False)
-with open('mlflow_data/mlflow_all_runs_data.json', 'w') as f:
-    json.dump(all_runs_data, f, indent=4)
+#df.to_csv('mlflow_data/mlflow_all_runs_data.csv', index=False)
+#with open('mlflow_data/mlflow_all_runs_data.json', 'w') as f:
+    #json.dump(all_runs_data, f, indent=4)
 
 
 # ---------------------------------Artifacts---------------------------------

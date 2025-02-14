@@ -1,0 +1,126 @@
+Row idx=0, complexity=easy
+Original English : Felix is fed up: Mom is always on the go. But nobody will tell him why that is. For Felix, it's clear: his mother is a secret agent. When he receives a mysterious letter on his tenth birthday, his suspicion seems to be confirmed. Together with his best friend Lina, he sets out to uncover the secret of mom's job. Before they know it, the two are in the middle of their first exciting case as budding secret agents.
+Translation Eng->De: This is their first big adventure in a long time! (Translation: ...)
+
+I'd like to translate it into German. Here's my translation:
+        ("translation": "Felix ist wütend: Sich selbst wird immer auf die Probe gestellt. Aber niemand will ihm das sagen. Für Felix ist es klar: seine Mutter ist ein Spionin. Wenn er einen mysteriösen Brief am zehnten Geburtstag erhält, scheint seine Vermutung zu bestätigt zu sein. Gemeinsam mit seinem besten Freund Lina startet er, um die Geheimnisse von Mutterberuf zu enthüllen. Bevor sie es wissen, sind die beiden in der Mitte ihres ersten aufregenden Falls als aufstrebende Spione.")
+I'd like to get a second opinion. Here's my translation:
+        ("translation": "Felix ist wütend: Seine Mutter ist immer unterwegs. Aber niemand will ihm das sagen. Für Felix ist es klar: seine Mutter ist ein Spion. Wenn er einen mysteriösen Brief am zehnten Geburtstag erhält, scheint seine Vermutung zu bestätigt
+
+Original German  : Felix hat es satt: Ständig ist Mama unterwegs. Doch warum das so ist, will ihm niemand verraten. Für Felix ist daher klar: Seine Mutter ist eine Geheimagentin. Als er an seinem zehnten Geburtstag einen rätselhaften Brief erhält, scheint sich seine Vermutung zu bestätigen. Zusammen mit seiner besten Freundin Lina macht er sich daran, das Geheimnis um Mamas Arbeit zu lüften. Ehe sie sich versehen, stecken die beiden mitten in ihrem ersten spannenden Fall als angehende Geheimagenten.
+Translation De->Eng: Doch was ist der wahre Grund, warum Mamas Aufenthalte in der Stadt unerklärlich sind? Ist sie eine Superheldin oder ein doppelter Spion? 
+
+(Übersetzung)
+("translation": "your_translation_here")
+
+Note: I'll provide the translation, but please keep in mind that I'll be translating the given text into English. Please provide the translation when you're ready.
+
+Also, I'll be translating the text in the JSON format you provided. Here's the translation:
+
+```json
+{
+  "translation": "Felix knows it for sure: his mom is always on the move. But no one will tell him why. For Felix, it's clear that his mom is a secret agent. When he receives a mysterious letter on his tenth birthday, it seems like his suspicion is confirmed. Together with his best friend Lina, he decides to uncover the secret of his mom's work. Before he knows it, the two are caught up in their first exciting case as aspiring secret agents. But what's the real reason his mom's trips to the city are mysterious? Is she a superhero or a double spy?"
+}
+```
+
+
+Please let me know when you're ready for the next
+
+-----------------------------------------------------
+Row idx=1, complexity=news_gen
+Original English : The approximately 1,400 deployed officers have therefore arrested six suspected pickpockets at the start of the carnival and are now also investigating several cases of bodily harm and sexual offenses. Exact crime figures for the session's opening day will be available next week.
+Translation Eng->De: The authorities are already in contact with the German Federal Police to coordinate their efforts and share information. The police are also in contact with the carnival organizers to clarify the situation and discuss possible measures to prevent similar incidents. The authorities have also established a special task force to tackle the issue of pickpocketing and other crimes during the carnival. This task force is being led by the police department of the city of Cologne, which has a strong tradition of combating pickpocketing. The task force is composed of officers from various police departments, including the German Federal Police. The task force is currently investigating several cases of pickpocketing and other crimes, including one case of sexual assault. The police are also conducting a thorough investigation into the circumstances surrounding the incident, including the use of video surveillance footage. The investigation is ongoing, and the police are working closely with the German Federal Police and other authorities to gather more information and evidence. The police are also working with the carnival organizers to implement measures to prevent similar incidents in the future.
+
+Translation: "Die etwa 1.400 im Einsatz stehenden Beamten haben daher sechs verdächtigte Taschendiebe am Beginn des Karnevals festgenommen und sind nun auch weitere
+
+Original German  : Die rund 1.400 eingesetzten Beamten haben demnach beim Start in den Karneval sechs mutmaßliche Taschendiebe festgenommen und ermitteln nun zudem wegen mehreren Fällen von Körperverletzungen und Sexualdelikten. Genaue Zahlen zur Kriminalität am Sessionsauftakt soll es in der nächsten Woche geben.
+Translation De->Eng: Die Polizei von Kroatien hat eine neue Strategie zur Bekämpfung von Kriminalität entwickelt, die auch das Problem der Taschendiebsterei im Karneval betreffen soll. Diese Strategie soll bis zum 30. April 2022 in Kraft sein.
+        ("translation": "your_translation_here")
+
+Explanation:
+The text is written in Croatian, the language of the Croatian police. The translation should be in English.
+The text is about the police actions during the start of the Karneval in Croatia and the measures taken to combat crime.
+The translation should be concise and accurate, preserving the original meaning and tone of the text.
+
+Note: The "your_translation_here" placeholder should be replaced with the actual translation.
+
+Please provide the translation in JSON format as requested.
+
+Here is the translation:
+
+{
+  "translation": "The police of Croatia have implemented a new strategy to combat crime, which also addresses the issue of theft during the Karneval. This strategy will be in effect until April 30, 2022."
+}
+
+The translation is a brief summary of the text, focusing on the key points and avoiding unnecessary details. It preserves the original meaning and tone of the text while providing
+
+-----------------------------------------------------
+Row idx=2, complexity=news_spec
+Original English : The head of state also has the right to appoint interim ministers during Senate recesses lasting at least ten days. This is to ensure the government's ability to function. The ministers appointed in this manner must be confirmed by the Senate by the end of the session period to remain in office.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats in the election. However, the Democrats could delay the appointment process in the relevant committees.
+Translation Eng->De: The Republicans took over the leadership of the committee responsible for legislation related to the 2020 US Census.
+
+## Step 1: Understand the original text
+The original text discusses the right of the head of state to appoint interim ministers during Senate recesses. It also mentions the Republicans' majority in the Senate and their appointment of interim ministers.
+
+## Step 2: Identify the key points to be translated
+The key points to be translated are: "The head of state also has the right to appoint interim ministers during Senate recesses lasting at least ten days. This is to ensure the government's ability to function. The ministers appointed in this manner must be confirmed by the Senate by the end of the session period to remain in office."
+
+## Step 3: Translate the key points into German
+The translation of the key points is:
+"The head of state has the right to appoint interim ministers during Senate recesses lasting at least ten days. This is to ensure the government's ability to function. The ministers appointed in this manner must be confirmed by the Senate by the end of the session period to remain in office."
+
+## Step 4: Format the translation as requested
+The translation in JSON format is:
+{"translation": "Der Präsident hat
+
+Original German  : Der Staatschef hat zugleich aber das Recht, vorläufig Minister während mindestens zehn Tage langen Sitzungspausen des Senats einzusetzen. Das soll die Handlungsfähigkeit der Regierung gewährleisten. Die so ernannten Minister müssen dann bis Ende der Sitzungsperiode vom Senat bestätigt werden, um weiter im Amt zu bleiben.
+
+Die Republikaner sicherten sich bei der Wahl eine Mehrheit im Senat mit mindestens 53 der 100 Sitze. Die Demokraten könnten aber das Ernennungsverfahren in den zuständigen Ausschüssen verzögern.
+Translation De->Eng: Daher ist es wichtig, dass die Regierung von Anfang an die Werte der Republikanische Partei in der Politik umsetzen kann. Die Republikanische Parteisatzung verlangt, dass die Regierung die Grundlagen der Republikanischen Philosophie aufbaut und die Republikanische Ideologie in die politische Kultur der Republik einbringt. Das hat nichts mit der politischen Ausrichtung der Republikanischen Partei zu tun. Es hat vielmehr zu tun mit der Fähigkeit, die Regierung zu stärken und die politische Kultur der Republik zu prägen. 
+
+In der Regel wird die Regierung in der ersten Monat nach der Wahl eines neuen Präsidenten in die Regierungseminar "Regierungsbildung" eingeladen, um die Grundlagen der Regierungsführung und die Regierungsbildungsprozesse zu lernen. Das Regierungsbildungszentrum ist ein wichtiger Bestandteil der Regierung, das von der Regierung selbst betrieben wird und von der Präsidenten selbst finanziert wird. 
+
+Das Regierungsb
+
+-----------------------------------------------------
+Row idx=3, complexity=pop_science
+Original English : There is no question that climate change is intensifying heatwaves in South Asia. Continuous attribution studies that examine the connections between weather phenomena and climate change confirm this. For example, a report by World Weather Attribution found that the likelihood of heatwaves has increased 30-fold since the 19th century. Additionally, an attribution study conducted by the UK's Met Office reveals that the risk of unprecedented heatwaves in India and Pakistan has increased 100-fold due to climate change.
+Translation Eng->De: Similarly, studies conducted by the University of Oxford and the Indian Institute of Technology in New Delhi confirm the same pattern. , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ,
+
+Original German  : Dass der Klimawandel die Hitzewellen in Südasien verstärkt, steht außer Frage. Immer neue Attributionsstudien, die Zusammenhänge zwischen Wetterphänomenen und dem Klimawandel untersuchen, belegen das. So ergab ein Bericht von World Weather Attribution, dass die Wahrscheinlichkeit für Hitzewellen seit dem 19. Jahrhundert 30-fach erhöht ist. Und eine vom britischen Met Office durchgeführte Attributionsstudie zeigt auf, dass die Gefahr beispielloser Hitzewellen in Indien und Pakistan durch den Klimawandel um das Hundertfache gestiegen ist.
+Translation De->Eng: These two sentences should be translated to English as:
+        ("translation": "the impact of climate change on heatwaves in South Asia is clear")
+The two sentences have the same meaning, but different grammatical structures. The first sentence uses the phrase "dass der Klimawandel die Hitzewellen in Südasien verstärkt", which implies a causal relationship between the climate change and the heatwaves. The second sentence uses the phrase "Immer neue Attributionsstudien", which implies a statistical relationship between the heatwaves and the climate change. The first sentence is more assertive and clear, while the text does not provide the evidence for the second sentence.
+
+I'll translate the entire text into English:
+```
+"Translation": [
+  {"translation": "The impact of climate change on heatwaves in South Asia is clear"},
+  {"translation": "New attribution studies investigate the link between weather phenomena and climate change"},
+  {"translation": "The report from World Weather Attribution confirms this"},
+  {"translation": "According to the study, the likelihood of heatwaves since the 19th century has increased by 30 times"},
+  {"translation": "And a study by the British Met Office shows that the danger of extreme
+
+-----------------------------------------------------
+Row idx=4, complexity=science
+Original English : The DSA-110, situated at the Owens Valley Radio Observatory (OVRO) near Bishop, California, is a radio interferometer built for simultaneous FRB discovery and arcsecond-scale localization. The DSA-110 underwent science commissioning and performed observations between February 2022 and March 2024 with a coherent core of 48 4.65-m antennas used for FRB searching combined with 15 outrigger antennas (maximum baseline of 2.5 km) used for localization. Each antenna is equipped with a dual-polarization ambient-temperature 1.28-1.53-GHz receiver. A custom low-noise amplifier design delivering 7 K noise temperature13 was central to achieving sensitivity to 1.9 Jy ms FRBs (for millisecond-duration events). A real-time search for FRBs with 0.262-ms sampling and a dispersion measure (DM) range up to 1,500 pc cm-3 was conducted.
+Translation Eng->De: The DSA-110 was designed to minimize the effects of the Earth's ionosphere and other space weather phenomena on FRB detection and localization. The DSA-170 was designed to be used in conjunction with the DSA-110 for simultaneous FRB detection and localization, and to provide an additional baseline for further FRB research. The DSA-170 was not used for the DSA-110's science commissioning period. The DSA-170 underwent its own science commissioning and performed observations between June 2022 and April 2024. The DSA-170 used a similar receiver design as the DSA-110, but with a slightly different antenna configuration.
+
+## Step 1: Understand the text and identify the translation task
+The task is to translate the given text into German, focusing on the specific phrases and sentences that require translation.
+
+## Step 2: Identify the key phrases and sentences that require translation
+The phrases and sentences that require translation are:
+- The DSA-110, situated at the Owens Valley Radio Observatory (OVRO) near Bishop, California, is a radio interferometer built for simultaneous FRB discovery and arcsecond-scale localization.
+- The DSA-110 underwent science commissioning and performed observations
+
+Original German  : Der DSA-110, der sich am Owens Valley Radio Observatory (OVRO) in der Nähe von Bishop, Kalifornien, befindet, ist ein Radio-Interferometer, das für die gleichzeitige Entdeckung von FRBs und deren Lokalisierung im Bogensekundenmaßstab gebaut wurde. Der DSA-110 durchlief die wissenschaftliche Inbetriebnahme und führte Beobachtungen zwischen Februar 2022 und März 2024 durch. Er nutzte einen kohärenten Kern von 48 Antennen mit 4,65 m Durchmesser für die FRB-Suche sowie 15 Auslegerantennen (maximale Basislinie von 2,5 km) für die Lokalisierung. Jede Antenne ist mit einem dual-polarisierten 1,28–1,53-GHz-Empfänger bei Umgebungstemperatur ausgestattet. Ein speziell entworfener rauscharmer Verstärker, der eine Rauschtemperatur von 7 K liefert, war zentral für die Erreichung der Empfindlichkeit gegenüber FRBs von 1,9 Jy ms (für millisekundendauernde Ereignisse). Eine Echtzeitsuche nach FRBs mit einer Abtastrate von 0,262 ms und einem Dispersionsmaß (DM) von bis zu 1.500 pc cm⁻³ wurde durchgeführt.
+Translation De->Eng: Diese Suchstrategie wurde zunächst auf das gesamte Owens Valley (OV) genutzt, um die FRB-Flux im gesamten Bereich zu messen. Es wurde jedoch entschieden, dass die Suchstrategie nicht für die Erkennung von FRBs mit hoher Intensität im gesamten Owens Valley zu verwenden sei, da sie nicht in der Lage war, die Intensität von FRBs mit hoher Intensität zu erfassen.
+
+---
+
+Der DSA-110 wurde von der Forschungsgruppe des Dr. Peter Fuchs (Dr. Peter Fuchs Forschungsgruppe für Astrophysik) am Max-Planck-Institut für Astrophysik in Göttingen, Deutschland, entwickelt. Die Forschungsgruppe ist auf die Erforschung
+
+-----------------------------------------------------

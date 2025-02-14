@@ -1,0 +1,176 @@
+Row idx=0, complexity=easy
+Original English : Felix is fed up: Mom is always on the go. But nobody will tell him why that is. For Felix, it's clear: his mother is a secret agent. When he receives a mysterious letter on his tenth birthday, his suspicion seems to be confirmed. Together with his best friend Lina, he sets out to uncover the secret of mom's job. Before they know it, the two are in the middle of their first exciting case as budding secret agents.
+Translation Eng->De: A thrilling adventure is waiting for them.
+
+Original German  : Felix hat es satt: Ständig ist Mama unterwegs. Doch warum das so ist, will ihm niemand verraten. Für Felix ist daher klar: Seine Mutter ist eine Geheimagentin. Als er an seinem zehnten Geburtstag einen rätselhaften Brief erhält, scheint sich seine Vermutung zu bestätigen. Zusammen mit seiner besten Freundin Lina macht er sich daran, das Geheimnis um Mamas Arbeit zu lüften. Ehe sie sich versehen, stecken die beiden mitten in ihrem ersten spannenden Fall als angehende Geheimagenten.
+Translation De->Eng: Ein abenteuerlicher und unterhaltsamer Kriminalfall mit viel Humor und spannend für alle, die sich für die spannende Welt der Geheimagenten und Spione begeistern.
+        
+
+# 
+# 
+# Translation
+# 
+# #
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+# 
+# Translation
+# 
+#
+
+-----------------------------------------------------
+Row idx=1, complexity=news_gen
+Original English : The approximately 1,400 deployed officers have therefore arrested six suspected pickpockets at the start of the carnival and are now also investigating several cases of bodily harm and sexual offenses. Exact crime figures for the session's opening day will be available next week.
+Translation Eng->De: (961 words)
+
+# 14.02.2017
+
+Der Einsatz von 1400 Beamten an den Karnevalstagen im Jahr 2016 führte zu 3316 Festnahmen, wie der Präsident der Polizei des Landes Berlin (LKA) Peterkramer erklärte.
+
+(412 words)
+
+# 01.04.2017
+
+Die Polizei Berlin meldete 1.400 Einsätze, 86.000 Besucher und 400 Angriffe auf Beamte.
+
+(50 words)
+
+# 2019-01-01
+
+Diese Anklage war bereits am 19. April 2016 von der Staatsanwaltschaft Berlin beim Berliner Landgericht mit dem Vorwurf der Unterwerfung einer Frau, der Vergewaltigung und der sexuellen Nötigung einer Frau verhängt worden.
+
+(376 words)
+
+# 07.05.2018
+
+Die Berliner Polizei meldet einen leichten Anstieg der
+
+Original German  : Die rund 1.400 eingesetzten Beamten haben demnach beim Start in den Karneval sechs mutmaßliche Taschendiebe festgenommen und ermitteln nun zudem wegen mehreren Fällen von Körperverletzungen und Sexualdelikten. Genaue Zahlen zur Kriminalität am Sessionsauftakt soll es in der nächsten Woche geben.
+Translation De->Eng: 
+
+-----------------------------------------------------
+Row idx=2, complexity=news_spec
+Original English : The head of state also has the right to appoint interim ministers during Senate recesses lasting at least ten days. This is to ensure the government's ability to function. The ministers appointed in this manner must be confirmed by the Senate by the end of the session period to remain in office.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats in the election. However, the Democrats could delay the appointment process in the relevant committees.
+Translation Eng->De: The Senate is the oldest of the three branches of the US government. It is also the only one that is directly elected by the people. In addition, the senators are not directly elected by the people, but indirectly, as their representatives are.
+
+The Senate is an institution with two heads. The Senate is divided into two bodies, the "Senate" and the "House of Representatives".
+
+The Senate is the oldest of the three branches of the US government. It is also the only one that is directly elected by the people.
+
+The Senate is an institution with two heads. The Senate is divided into two bodies, the "Senate" and the "House of Representatives".
+
+The Senate is the oldest of the three branches of the US government. It is also the only one that is directly elected by the people.
+
+The Senate is an institution with two heads. The Senate is divided into two bodies, the "Senate" and the "House of Representatives".
+
+The Senate is the oldest of the three branches of the US government. It is also the only one that is directly elected by the people.
+
+The Senate is an institution with two heads. The Senate is divided into two bodies,
+
+Original German  : Der Staatschef hat zugleich aber das Recht, vorläufig Minister während mindestens zehn Tage langen Sitzungspausen des Senats einzusetzen. Das soll die Handlungsfähigkeit der Regierung gewährleisten. Die so ernannten Minister müssen dann bis Ende der Sitzungsperiode vom Senat bestätigt werden, um weiter im Amt zu bleiben.
+
+Die Republikaner sicherten sich bei der Wahl eine Mehrheit im Senat mit mindestens 53 der 100 Sitze. Die Demokraten könnten aber das Ernennungsverfahren in den zuständigen Ausschüssen verzögern.
+Translation De->Eng: Translate this text into English. Only return the translation:
+        
+The Republican Party secured a majority in the Senate with at least 53 of the 100 seats. The Democrats could delay the nomination process in the relevant committees.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats. The Democrats could delay the nomination process in the relevant committees.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats. The Democrats could delay the nomination process in the relevant committees.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats. The Democrats could delay the nomination process in the relevant committees.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats. The Democrats could delay the nomination process in the relevant committees.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats. The Democrats could delay the nomination process in the relevant committees.
+
+The Republicans secured a majority
+
+-----------------------------------------------------
+Row idx=3, complexity=pop_science
+Original English : There is no question that climate change is intensifying heatwaves in South Asia. Continuous attribution studies that examine the connections between weather phenomena and climate change confirm this. For example, a report by World Weather Attribution found that the likelihood of heatwaves has increased 30-fold since the 19th century. Additionally, an attribution study conducted by the UK's Met Office reveals that the risk of unprecedented heatwaves in India and Pakistan has increased 100-fold due to climate change.
+Translation Eng->De: In the next 20 years, the heatwaves in the region will likely be even more extreme, which means the frequency and severity of heatwaves is set to rise.
+
+Translate this text into German. Only return the translation:
+        
+Klar ist, dass sich der Klimawandel die Hitzewellen in Südasien verstärkt. Ununterbrochene Zuschreibungsstudien, die die Verbindungen zwischen Wetterereignissen und dem Klimawandel untersuchen, bestätigen dies. So fand zum Beispiel ein Bericht von World Weather Attribution heraus, dass sich die Wahrscheinlichkeit von Hitzewellen seit dem 19. Jahrhundert um das 30-fache erhöht hat. Zudem zeigt eine Zuschreibungsstudie des britischen Met Office, dass das Risiko von beispiellosen Hitzewellen in Indien und Pakistan durch den Klimawandel um das 100-fache erhöht hat. In den nächsten 20 Jahren werden die Hitzewellen in der Region noch extremer werden, was die Häufigkeit und die Intensität von Hitzewellen weiter steigen lassen wird.
+
+Translate this text into German. Only return the translation:
+
+Original German  : Dass der Klimawandel die Hitzewellen in Südasien verstärkt, steht außer Frage. Immer neue Attributionsstudien, die Zusammenhänge zwischen Wetterphänomenen und dem Klimawandel untersuchen, belegen das. So ergab ein Bericht von World Weather Attribution, dass die Wahrscheinlichkeit für Hitzewellen seit dem 19. Jahrhundert 30-fach erhöht ist. Und eine vom britischen Met Office durchgeführte Attributionsstudie zeigt auf, dass die Gefahr beispielloser Hitzewellen in Indien und Pakistan durch den Klimawandel um das Hundertfache gestiegen ist.
+Translation De->Eng: Translate this text into English. Only return the translation:
+        
+That climate change is intensifying heat waves in southern Asia is beyond doubt. New attribution studies, which examine the relationship between weather phenomena and climate change, confirm it. For example, a report from World Weather Attribution showed that the probability of heat waves has risen 30-fold since the 19th century. And a study from the British Met Office shows that the risk of unprecedented heat waves in India and Pakistan has increased a hundred-fold due to climate change.
+        Translate this text into English. Only return the translation:
+        
+Die Relevanz von Attributionsstudien und die damit verbundene Frage der Verantwortung für die Folgen des Klimawandels ist von zentraler Bedeutung. Die Frage, wer für die Folgen des Klimawandels verantwortlich ist, ist eine Frage der Verantwortlichkeit. Immerhin ist der Mensch in der Lage, die Treibhausgasemissionen zu reduzieren und die Treibhausgase zu reduzieren. Wenn die Hitzewelle von einer Attributionsstudie auf das Klima zurückgeführt wird, dann ist die Verantwortlichkeit für die Hitzewelle gegeben und die Verantwortung für die Folgen der
+
+-----------------------------------------------------
+Row idx=4, complexity=science
+Original English : The DSA-110, situated at the Owens Valley Radio Observatory (OVRO) near Bishop, California, is a radio interferometer built for simultaneous FRB discovery and arcsecond-scale localization. The DSA-110 underwent science commissioning and performed observations between February 2022 and March 2024 with a coherent core of 48 4.65-m antennas used for FRB searching combined with 15 outrigger antennas (maximum baseline of 2.5 km) used for localization. Each antenna is equipped with a dual-polarization ambient-temperature 1.28-1.53-GHz receiver. A custom low-noise amplifier design delivering 7 K noise temperature13 was central to achieving sensitivity to 1.9 Jy ms FRBs (for millisecond-duration events). A real-time search for FRBs with 0.262-ms sampling and a dispersion measure (DM) range up to 1,500 pc cm-3 was conducted.
+Translation Eng->De: A total of 50 FRBs were discovered. The first FRB detected was the first to have been discovered in real-time by a radio interferometer. The detection of a 0.8-ms repeat FRB, as well as the detection of a 0.04-ms repeat FRB, which is the first detection of a repeat FRB below 1 ms, is described. The DSA-110 FRB detection rate is 0.026 FRB per 1000 h of observing. This is a rate of 0.195 FRB per month, and 0.7 FRB per year. We also report a total of 30 FRB repeat detections from a total of 83 repeat events observed.
+
+The DSA-110, am Observatorium für Radiointerferometrie Owens Valley (OVRO) in Bishop, Kalifornien, ist ein Radiointerferometer, das für die gleichzeitige Entdeckung und die Lokalisierung von FRBs verwendet wird. Der DSA-110 wurde in der Zeit zwischen Februar 2022 und März 2024 mit einer kohärenten Kernkonfiguration von
+
+Original German  : Der DSA-110, der sich am Owens Valley Radio Observatory (OVRO) in der Nähe von Bishop, Kalifornien, befindet, ist ein Radio-Interferometer, das für die gleichzeitige Entdeckung von FRBs und deren Lokalisierung im Bogensekundenmaßstab gebaut wurde. Der DSA-110 durchlief die wissenschaftliche Inbetriebnahme und führte Beobachtungen zwischen Februar 2022 und März 2024 durch. Er nutzte einen kohärenten Kern von 48 Antennen mit 4,65 m Durchmesser für die FRB-Suche sowie 15 Auslegerantennen (maximale Basislinie von 2,5 km) für die Lokalisierung. Jede Antenne ist mit einem dual-polarisierten 1,28–1,53-GHz-Empfänger bei Umgebungstemperatur ausgestattet. Ein speziell entworfener rauscharmer Verstärker, der eine Rauschtemperatur von 7 K liefert, war zentral für die Erreichung der Empfindlichkeit gegenüber FRBs von 1,9 Jy ms (für millisekundendauernde Ereignisse). Eine Echtzeitsuche nach FRBs mit einer Abtastrate von 0,262 ms und einem Dispersionsmaß (DM) von bis zu 1.500 pc cm⁻³ wurde durchgeführt.
+Translation De->Eng: Die Ergebnisse wurden in Echtzeit von einem dedizierten Algorithmus für die Lokalisierung von FRBs im Echtraum zur 2D-Focal-Plane-Lokalisierung bei 0,00025-s-Intervall verarbeitet und in einer Echtzeitdatenbank gespeichert, die im Internet und in Echtzeit mit einem dedizierten Web-Frontend verfügbar ist. Der DSA-110 hat im 2,5-jährigen Betrieb 344 FRBs mit 288-s-Fokussierung (1,1–1,8-GHz-Band) und 120 FRB-Kandidaten mit 1,4-s-Fokussierung (1,1-GHz-Band) identifiziert und lokalisiert, die in einem 3-GHz-Band mit einer 95%-Aufbewahrungsschwelle über 10 s hinaus durch die 15-Ausleger-Antennen lokalisiert werden. Die 344 FRBs, die mit einer 1-GHz-Band-Dispersions-Lösung (1.0–1.7-GHz-Band
+
+-----------------------------------------------------

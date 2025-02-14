@@ -1,0 +1,211 @@
+Row idx=0, complexity=easy
+Original English : Felix is fed up: Mom is always on the go. But nobody will tell him why that is. For Felix, it's clear: his mother is a secret agent. When he receives a mysterious letter on his tenth birthday, his suspicion seems to be confirmed. Together with his best friend Lina, he sets out to uncover the secret of mom's job. Before they know it, the two are in the middle of their first exciting case as budding secret agents.
+Translation Eng->De: If you do not understand the original text, do not translate.
+        Please write a short text.
+
+
+This is the last project of the course.
+
+
+## Step 3:  Translate
+
+Translate the following sentences into German.
+
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+- I am the person who is in the photo.
+
+Original German  : Felix hat es satt: Ständig ist Mama unterwegs. Doch warum das so ist, will ihm niemand verraten. Für Felix ist daher klar: Seine Mutter ist eine Geheimagentin. Als er an seinem zehnten Geburtstag einen rätselhaften Brief erhält, scheint sich seine Vermutung zu bestätigen. Zusammen mit seiner besten Freundin Lina macht er sich daran, das Geheimnis um Mamas Arbeit zu lüften. Ehe sie sich versehen, stecken die beiden mitten in ihrem ersten spannenden Fall als angehende Geheimagenten.
+Translation De->Eng: No other translation units.
+This is a good example for an online application:
+
+        Sie sind am besten mit dem Auto erreichbar.
+
+A simple example for the other direction:
+
+        The children are a bit loud. = Die Kinder sind etwas laut.
+
+I have a list of 3000 phrases. I would like to translate them from English into German.
+
+We have a customer who is looking for a German translation of a text. There are some terms in the text that are hard to translate. The text is the following:
+
+The text is about a company in the field of medical technology.
+
+A friend of my wife's was looking for a translation of a text. The text is in English. Here are the first few sentences:
+
+I am a very good translator. I have been translating for more than 10 years, and I'm always trying to learn new languages. I am a fast translator, and I'm also a fast learner.
+
+I will translate the following text from English into German:
+
+The text is about a company in the field of medical technology.
+
+I am a very good translator. I have been translating for more than
+
+-----------------------------------------------------
+Row idx=1, complexity=news_gen
+Original English : The approximately 1,400 deployed officers have therefore arrested six suspected pickpockets at the start of the carnival and are now also investigating several cases of bodily harm and sexual offenses. Exact crime figures for the session's opening day will be available next week.
+Translation Eng->De: Do not return the original sentence.
+
+The translation is wrong! The correct translation is:
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Ich schlafe immer lange während der Woche.
+
+        Please use the German translation instead of the English translation, as the German translation is more in line with the original.
+
+In addition, the city is making the same error as in the 2015-2019 period, when it calculated the number of days with no new cases of infection with the coronavirus by only using the numbers of the days on which no new cases were reported. In the current period, for example, the city reports 28 days with no new cases of infection. But if there were new cases, for example, on a Friday, a weekend and then a Monday, the city would still report 28 days with no new infections.
+
+        Translate the text into German. Here are two examples:
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit. = Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit. =  Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Ich
+
+Original German  : Die rund 1.400 eingesetzten Beamten haben demnach beim Start in den Karneval sechs mutmaßliche Taschendiebe festgenommen und ermitteln nun zudem wegen mehreren Fällen von Körperverletzungen und Sexualdelikten. Genaue Zahlen zur Kriminalität am Sessionsauftakt soll es in der nächsten Woche geben.
+Translation De->Eng: The following table contains the most frequent 1000 words in the German language.
+
+We use cookies on our site. By continuing to use our site, you agree to our use of cookies. Our privacy policy explains the collection of cookies.
+
+* The text has been translated by the machine translation system of the European Union. A review and subsequent editing has not taken place. The press release does not come from the European Union, but is available from this URL: https://web-gate.eu-web.eu.eu-web.eu.eu-web.eu
+
+* Die Republiken sicherten sich bei der Wahl eine Mehrheit.
+
+* Unter der Woche schlafe ich immer lange.
+
+* Nur die Übersetzung.
+
+* Der folgende Text enthält die häufigsten 1000 Wörter der deutschen Sprache.
+
+Die rund 1.400 eingesetzten Beamten haben demnach beim Start in den Karneval sechs mutmaßliche Taschendiebe festgenommen und ermitteln nun zudem wegen mehreren Fällen von Körperverletzungen und Sexualdelikten. Genaue Zahlen zur Kriminalität am Sessionsauftakt soll es in der nächsten Woche geben.
+
+-----------------------------------------------------
+Row idx=2, complexity=news_spec
+Original English : The head of state also has the right to appoint interim ministers during Senate recesses lasting at least ten days. This is to ensure the government's ability to function. The ministers appointed in this manner must be confirmed by the Senate by the end of the session period to remain in office.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats in the election. However, the Democrats could delay the appointment process in the relevant committees.
+Translation Eng->De: Translate the following:
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Unter der Woche schlafe ich immer lange.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Unter der Woche schlafe ich immer lange.
+
+        Translate the following:
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+
+        Translate the following:
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+
+        Translate the following:
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+
+        Translate the following:
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+
+        Translate the following:
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+
+        Translate the following:
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+
+        Translate the following:
+        Die Republikaner sicherten
+
+Original German  : Der Staatschef hat zugleich aber das Recht, vorläufig Minister während mindestens zehn Tage langen Sitzungspausen des Senats einzusetzen. Das soll die Handlungsfähigkeit der Regierung gewährleisten. Die so ernannten Minister müssen dann bis Ende der Sitzungsperiode vom Senat bestätigt werden, um weiter im Amt zu bleiben.
+
+Die Republikaner sicherten sich bei der Wahl eine Mehrheit im Senat mit mindestens 53 der 100 Sitze. Die Demokraten könnten aber das Ernennungsverfahren in den zuständigen Ausschüssen verzögern.
+Translation De->Eng: Do not translate the example again.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit. = The Republicans secured a majority in the election.
+        In der Vorwahl hat die Partei die Mehrheit der Stimmen erhalten. = In the primaries, the party has won a majority of the votes.
+        The Senate has a majority. = Der Senat hat eine Mehrheit.
+        The Republicans have secured a majority in the election. = Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        The Republicans secured a majority in the election. = Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit. = The Republicans secured a majority in the election.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit. = Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit. = The Republicans secured a majority in the election.
+        The Republicans secured a majority in the election. = Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit. = The Republicans secured a majority in the election.
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit
+
+-----------------------------------------------------
+Row idx=3, complexity=pop_science
+Original English : There is no question that climate change is intensifying heatwaves in South Asia. Continuous attribution studies that examine the connections between weather phenomena and climate change confirm this. For example, a report by World Weather Attribution found that the likelihood of heatwaves has increased 30-fold since the 19th century. Additionally, an attribution study conducted by the UK's Met Office reveals that the risk of unprecedented heatwaves in India and Pakistan has increased 100-fold due to climate change.
+Translation Eng->De: Do not use a translator.
+        If you are not able to translate it, you can ask for help in the comments.
+        I'm looking forward to your response!
+
+# Easy  # Medium  # Medium  # Hard  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium  # Medium
+
+Original German  : Dass der Klimawandel die Hitzewellen in Südasien verstärkt, steht außer Frage. Immer neue Attributionsstudien, die Zusammenhänge zwischen Wetterphänomenen und dem Klimawandel untersuchen, belegen das. So ergab ein Bericht von World Weather Attribution, dass die Wahrscheinlichkeit für Hitzewellen seit dem 19. Jahrhundert 30-fach erhöht ist. Und eine vom britischen Met Office durchgeführte Attributionsstudie zeigt auf, dass die Gefahr beispielloser Hitzewellen in Indien und Pakistan durch den Klimawandel um das Hundertfache gestiegen ist.
+Translation De->Eng: Please do not add anything. = Nur die Übersetzung, nichts hinzufügen.
+
+###
+
+[4]
+
+Dass der Klimawandel die Hitzewellen in Südasien verstärkt, steht außer Frage. Immer neue Attributionsstudien, die Zusammenhänge zwischen Wetterphänomenen und dem Klimawandel untersuchen, belegen das. So ergab ein Bericht von World Weather Attribution, dass die Wahrscheinlichkeit für Hitzewellen seit dem 19. Jahrhundert 30-fach erhöht ist. Und eine vom britischen Met Office durchgeführte Attributionsstudie zeigt auf, dass die Gefahr beispielloser Hitzewellen in Indien und Pakistan durch den Klimawandel um das Hundertfache gestiegen ist.
+
+        Translate the text into English. Here are two examples:
+        The Republicans secured a majority in the election. =  Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        During the week, I always sleep long. = Unter der Woche schlafe ich immer lange.
+        Only return the translation. Please do not add anything. = Nur die Übersetzung, nichts hinzufügen.
+
+###
+
+[14]
+
+-----------------------------------------------------
+Row idx=4, complexity=science
+Original English : The DSA-110, situated at the Owens Valley Radio Observatory (OVRO) near Bishop, California, is a radio interferometer built for simultaneous FRB discovery and arcsecond-scale localization. The DSA-110 underwent science commissioning and performed observations between February 2022 and March 2024 with a coherent core of 48 4.65-m antennas used for FRB searching combined with 15 outrigger antennas (maximum baseline of 2.5 km) used for localization. Each antenna is equipped with a dual-polarization ambient-temperature 1.28-1.53-GHz receiver. A custom low-noise amplifier design delivering 7 K noise temperature13 was central to achieving sensitivity to 1.9 Jy ms FRBs (for millisecond-duration events). A real-time search for FRBs with 0.262-ms sampling and a dispersion measure (DM) range up to 1,500 pc cm-3 was conducted.
+Translation Eng->De: If necessary, you can use the Google Translate button, e.g. for checking the translation.
+
+        The DSA-110, located at the Owens Valley Radio Observatory (OVRO) near Bishop, California, is a radio interferometer built for simultaneous FRB discovery and arcsecond-scale localization. The DSA-110 underwent science commissioning and performed observations between February 2022 and March 2024 with a coherent core of 48 4.65-m antennas used for FRB searching combined with 15 outrigger antennas (maximum baseline of 2.5 km) used for localization. Each antenna is equipped with a dual-polarization ambient-temperature 1.28-1.53-GHz receiver. A custom low-noise amplifier design delivering 7 K noise temperature13 was central to achieving sensitivity to 1.9 Jy ms FRBs (for millisecond-duration events). A real-time search for FRBs with 0.262-ms sampling and a dispersion measure (DM) range up to 1,500 pc cm-3 was conducted.
+
+        The DSA-110, im Owens Valley Radio Observatory
+
+Original German  : Der DSA-110, der sich am Owens Valley Radio Observatory (OVRO) in der Nähe von Bishop, Kalifornien, befindet, ist ein Radio-Interferometer, das für die gleichzeitige Entdeckung von FRBs und deren Lokalisierung im Bogensekundenmaßstab gebaut wurde. Der DSA-110 durchlief die wissenschaftliche Inbetriebnahme und führte Beobachtungen zwischen Februar 2022 und März 2024 durch. Er nutzte einen kohärenten Kern von 48 Antennen mit 4,65 m Durchmesser für die FRB-Suche sowie 15 Auslegerantennen (maximale Basislinie von 2,5 km) für die Lokalisierung. Jede Antenne ist mit einem dual-polarisierten 1,28–1,53-GHz-Empfänger bei Umgebungstemperatur ausgestattet. Ein speziell entworfener rauscharmer Verstärker, der eine Rauschtemperatur von 7 K liefert, war zentral für die Erreichung der Empfindlichkeit gegenüber FRBs von 1,9 Jy ms (für millisekundendauernde Ereignisse). Eine Echtzeitsuche nach FRBs mit einer Abtastrate von 0,262 ms und einem Dispersionsmaß (DM) von bis zu 1.500 pc cm⁻³ wurde durchgeführt.
+Translation De->Eng: Not the original text.
+
+This is a work-in-progress, and I am looking for people with expertise in radio astronomy or data analysis to help. If you have any questions, please let me know.
+
+### Results
+
+30-Aug-2021
+
+This is a work-in-progress, and I am looking for people with expertise in radio astronomy or data analysis to help. If you have any questions, please let me know.
+
+### Results
+
+30-Aug-2021
+
+This is a work-in-progress, and I am looking for people with expertise in radio astronomy or data analysis to help. If you have any questions, please let me know.
+
+### Results
+
+30-Aug-2021
+
+This is a work-in-progress, and I am looking for people with expertise in radio astronomy or data analysis to help. If you have any questions, please let me know.
+
+### Results
+
+30-Aug-2021
+
+This is a work-in-progress, and I am looking for people with expertise in radio astronomy or data analysis to help. If you have any questions
+
+-----------------------------------------------------

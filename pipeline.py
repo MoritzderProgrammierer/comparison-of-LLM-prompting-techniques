@@ -15,13 +15,21 @@ from metrics import (
     calculate_rougeL
 )
 from prompt_strategy import (
-    ZeroShotStrategy, 
-    InstructionStrategy, 
-    PersonaStrategy,
-    FewShotStrategy,
-    SelfCorrectStrategy,
-    AllTogetherStrategy,
-    ComparisonStrategy
+    ZeroShotTechnique,
+    ZeroShotTechniqueJSONOutput,
+    ZeroShotTechniqueHighlightOnly,
+    ZeroShotTechniqueTranslationTextFirst,
+    ZeroShotTechniqueConcretePromptEnding,
+    ZeroShotTechniqueAllTogether,
+    InstructionTechnique, 
+    PersonaTechnique,
+    FewShotTechnique,
+    FewShotTechniqueTranslationTextFirst,
+    FewShotTechniqueWithExampleToken,
+    FewShotTechniqueContinueAfterExamples,
+    SelfCorrectTechnique,
+    AllTogetherTechnique,
+    ComparisonTechnique
 )
 from model_loader import ModelLoader
 from plot_creators import (
@@ -292,7 +300,7 @@ if __name__ == "__main__":
     
     logging.basicConfig(level=logging.INFO)  # Shows INFO and WARNING, not DEBUG
     # Or:
-    # logging.basicConfig(level=logging.DEBUG)  # Shows DEBUG, INFO, WARNING
+    #logging.basicConfig(level=logging.DEBUG)  # Shows DEBUG, INFO, WARNING
     
     file_path = "./data/machine_translation"
 
@@ -311,13 +319,21 @@ if __name__ == "__main__":
 
     # Strategies
     strategies = [
-        ZeroShotStrategy(),
-        InstructionStrategy(),
-        PersonaStrategy(),
-        FewShotStrategy(),
-        SelfCorrectStrategy(),
-        AllTogetherStrategy(),
-        ComparisonStrategy()
+        ZeroShotTechnique(),
+        ZeroShotTechniqueJSONOutput(),
+        ZeroShotTechniqueHighlightOnly(),
+        ZeroShotTechniqueTranslationTextFirst(),
+        ZeroShotTechniqueConcretePromptEnding(),
+        ZeroShotTechniqueAllTogether(),
+        InstructionTechnique(), 
+        PersonaTechnique(),
+        FewShotTechnique(),
+        FewShotTechniqueTranslationTextFirst(),
+        FewShotTechniqueWithExampleToken(),
+        FewShotTechniqueContinueAfterExamples(),
+        SelfCorrectTechnique(),
+        AllTogetherTechnique(),
+        ComparisonTechnique()
     ]
 
     # Metrics

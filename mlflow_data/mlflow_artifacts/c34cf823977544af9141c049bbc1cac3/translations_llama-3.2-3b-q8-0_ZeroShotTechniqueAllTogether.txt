@@ -1,0 +1,120 @@
+Row idx=0, complexity=easy
+Original English : Felix is fed up: Mom is always on the go. But nobody will tell him why that is. For Felix, it's clear: his mother is a secret agent. When he receives a mysterious letter on his tenth birthday, his suspicion seems to be confirmed. Together with his best friend Lina, he sets out to uncover the secret of mom's job. Before they know it, the two are in the middle of their first exciting case as budding secret agents.
+Translation Eng->De: json
+
+{
+    "translation": ""
+} 
+
+Please respond with the text in German, wrapped in the JSON format:
+
+{
+    "translation": ""
+} 
+
+No other text or information should be be included. 
+" translation": "Die Mutter von Felix ist wütend: Sie ist immer unterwegs. Aber niemand will es ihm erklären. Für Felix ist es klar: seine Mutter ist eine Geheimagentin. Wenn er eine mysteriöse Nachricht auf seinem zehnten Geburtstag erhält, scheint seine Vermutung zu bestätigt. Zusammen mit seinem besten Freund Lina, setzt er sich dann darauf hin, die Geheimnis um die Arbeit seiner Mutter aufzuklären. Bevor sie es wissen, sind die beiden in der Mitte ihres ersten aufregenden Falls als neulinge Geheimagenten." 
+"translation": " "} 
+
+No need to wrap the JSON in quotes or add the " " translation": "" part. 
+
+{ "translation": "Die Mutter von Felix ist wütend: Sie ist immer unterwegs. Aber niemand will es ihm erklären. Für Felix ist es klar: seine Mutter ist eine Ge
+
+Original German  : Felix hat es satt: Ständig ist Mama unterwegs. Doch warum das so ist, will ihm niemand verraten. Für Felix ist daher klar: Seine Mutter ist eine Geheimagentin. Als er an seinem zehnten Geburtstag einen rätselhaften Brief erhält, scheint sich seine Vermutung zu bestätigen. Zusammen mit seiner besten Freundin Lina macht er sich daran, das Geheimnis um Mamas Arbeit zu lüften. Ehe sie sich versehen, stecken die beiden mitten in ihrem ersten spannenden Fall als angehende Geheimagenten.
+Translation De->Eng: json
+
+```
+{
+  "translation": "Felix is fed up: Always is mom on the way. But why so is it, no one will tell him. For Felix is clear: His mother is a spy."
+}
+```
+Note: I've translated the text into English, and kept the original sentence structure and wording as closely as possible. Let me know if you'd like me to make any changes!
+
+-----------------------------------------------------
+Row idx=1, complexity=news_gen
+Original English : The approximately 1,400 deployed officers have therefore arrested six suspected pickpockets at the start of the carnival and are now also investigating several cases of bodily harm and sexual offenses. Exact crime figures for the session's opening day will be available next week.
+Translation Eng->De: json
+
+## 
+
+"Die etwa 1.400 eingesetzten Beamten haben daher sechs vermutete Taschendiebe an der Beginn des Karnevals festgenommen und untersuchen jetzt auch mehrere Fälle von Körperverletzung und sexuellen Übergriffen. Genauige Strafdaten für den ersten Tag der Sitzung werden nächste Woche verfügbar sein." 
+
+( "translation": "Sechs Taschendiebe am Beginn des Karnevals festgenommen und mehrere Fälle von Körperverletzung und sexuellen Übergriffen untersucht") 
+
+( "translation": "Die Polizei hat am ersten Tag der Sitzung sechs Taschendiebe festgenommen und mehrere Fälle von Körperverletzung und sexuellen Übergriffen untersucht.") 
+
+( "translation": "Die Polizei hat am ersten Tag der Sitzung sechs Taschendiebe festgenommen und untersucht mehrere Fälle von Körperverletzung und sexuellen Übergriffen.") 
+
+( "translation": "Sechs Taschendiebe wurden am ersten Tag
+
+Original German  : Die rund 1.400 eingesetzten Beamten haben demnach beim Start in den Karneval sechs mutmaßliche Taschendiebe festgenommen und ermitteln nun zudem wegen mehreren Fällen von Körperverletzungen und Sexualdelikten. Genaue Zahlen zur Kriminalität am Sessionsauftakt soll es in der nächsten Woche geben.
+Translation De->Eng: json
+
+
+{
+  "translation": "The approximately 1400 police officers have arrested six suspected thieves, and are now investigating additional cases of assault and sexual offenses"
+}
+
+-----------------------------------------------------
+Row idx=2, complexity=news_spec
+Original English : The head of state also has the right to appoint interim ministers during Senate recesses lasting at least ten days. This is to ensure the government's ability to function. The ministers appointed in this manner must be confirmed by the Senate by the end of the session period to remain in office.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats in the election. However, the Democrats could delay the appointment process in the relevant committees.
+Translation Eng->De: json
+
+```
+Die Regierungspfarrer haben auch das Recht, interimistische Minister zu ernennen, wenn der Senat zumindest zehn Tage lang nicht zusammentrat. Dies soll gewährleisten, dass die Regierung weiterhin funktionieren kann. Die in dieser Weise ernannten Minister müssen von der Senatsmitgliedern bis zum Ende der Sitzungspause bestätigt werden, um in ihrem Amt zu bleiben.
+Die Republikaner haben in der Senatswahl mindestens 53 von 100 Sitzen gesichert. Dennoch konnte die Demokratische Partei die Einleitung des Eingabeverfahrens in den relevanten Ausschüssen verzögern.
+```
+
+Original German  : Der Staatschef hat zugleich aber das Recht, vorläufig Minister während mindestens zehn Tage langen Sitzungspausen des Senats einzusetzen. Das soll die Handlungsfähigkeit der Regierung gewährleisten. Die so ernannten Minister müssen dann bis Ende der Sitzungsperiode vom Senat bestätigt werden, um weiter im Amt zu bleiben.
+
+Die Republikaner sicherten sich bei der Wahl eine Mehrheit im Senat mit mindestens 53 der 100 Sitze. Die Demokraten könnten aber das Ernennungsverfahren in den zuständigen Ausschüssen verzögern.
+Translation De->Eng: json
+
+Note: I will not provide any additional text or explanations. The output should be a JSON object with only the translation.
+
+-----------------------------------------------------
+Row idx=3, complexity=pop_science
+Original English : There is no question that climate change is intensifying heatwaves in South Asia. Continuous attribution studies that examine the connections between weather phenomena and climate change confirm this. For example, a report by World Weather Attribution found that the likelihood of heatwaves has increased 30-fold since the 19th century. Additionally, an attribution study conducted by the UK's Met Office reveals that the risk of unprecedented heatwaves in India and Pakistan has increased 100-fold due to climate change.
+Translation Eng->De: JSON
+
+Die Frage, ob Klimawandel die Intensität von Hitzeanfällen in Südasien verstärkt hat, ist nicht mehr zu bezweifeln. Studien zur Attributionsbeziehung zwischen Wetterereignissen und Klimawandel bestätigen dies. Beispielsweise hat ein Bericht von World Weather Attribution festgestellt, dass die Wahrscheinlichkeit von Hitzeanfällen um 30-fach seit dem 19. Jahrhundert gestiegen ist. Zudem hat ein von der UK-Met Office durchgeführtes Attributionsstudium die Risiken von unerwarteten Hitzeanfällen in Indien und Pakistan um 100-fach erhöht, was aufgrund des Klimawandels entstanden sind.
+
+Translation:
+("translation": "Klimawandel verstärkt die Intensität von Hitzeanfällen in Südasien, wobei die Wahrscheinlichkeit von Hitzeanfällen seit dem 19. Jahrhundert um 30-fach gestiegen ist und die Risiken von unerwarteten Hitzeanfällen in Indien
+
+Original German  : Dass der Klimawandel die Hitzewellen in Südasien verstärkt, steht außer Frage. Immer neue Attributionsstudien, die Zusammenhänge zwischen Wetterphänomenen und dem Klimawandel untersuchen, belegen das. So ergab ein Bericht von World Weather Attribution, dass die Wahrscheinlichkeit für Hitzewellen seit dem 19. Jahrhundert 30-fach erhöht ist. Und eine vom britischen Met Office durchgeführte Attributionsstudie zeigt auf, dass die Gefahr beispielloser Hitzewellen in Indien und Pakistan durch den Klimawandel um das Hundertfache gestiegen ist.
+Translation De->Eng: json
+```
+*only* in this JSON format:
+```
+{
+  "translation": "The climate change is clearly increasing the heatwaves in South Asia, this is a fact. New attribution studies that investigate the links between weather phenomena and climate change confirm it. For example, a report by World Weather Attribution found the probability of heatwaves since the 19th century to be 30 times higher. And a study by the British Met Office showed that the risk of extreme heatwaves in India and Pakistan has increased by a factor of 100 by the climate change."
+}
+```
+
+-----------------------------------------------------
+Row idx=4, complexity=science
+Original English : The DSA-110, situated at the Owens Valley Radio Observatory (OVRO) near Bishop, California, is a radio interferometer built for simultaneous FRB discovery and arcsecond-scale localization. The DSA-110 underwent science commissioning and performed observations between February 2022 and March 2024 with a coherent core of 48 4.65-m antennas used for FRB searching combined with 15 outrigger antennas (maximum baseline of 2.5 km) used for localization. Each antenna is equipped with a dual-polarization ambient-temperature 1.28-1.53-GHz receiver. A custom low-noise amplifier design delivering 7 K noise temperature13 was central to achieving sensitivity to 1.9 Jy ms FRBs (for millisecond-duration events). A real-time search for FRBs with 0.262-ms sampling and a dispersion measure (DM) range up to 1,500 pc cm-3 was conducted.
+Translation Eng->De: JSON
+
+        
+        ("translation": "Der DSA-110, im Owens Valley Radio Observatory (OVRO) in Bishop, Kalifornien, ist ein Radiointerferometer, das zum gleichzeitigen Entdecken von FRBs und zur Lokalisierung auf einer Sekunde Skala verwendet wird.")<|endofprompt|>.JSON
+
+        
+        ("translation": "Der DSA-110 unterzog sich der Wissenschaftskommission und führte zwischen Februar 2022 und März 2024 Beobachtungen durch. Es wurde ein Koherenzkern aus 48 4,65-m Antennen verwendet, um FRBs zu suchen, kombiniert mit 15 Außenantennen (Maximalbaseline von 2,5 km), die für die Lokalisierung verwendet wurden.")<|endofprompt|>.JSON
+
+        
+        ("translation": "Jede Antenne ist mit einem dualpolarisierenden, Ambient-temperatur-Receiver für 1,28-1,53-GHz ausgestattet.")<|endofprompt|>.JSON
+
+        
+        ("translation": "Ein auf- und nachtsichernder Suchdienst
+
+Original German  : Der DSA-110, der sich am Owens Valley Radio Observatory (OVRO) in der Nähe von Bishop, Kalifornien, befindet, ist ein Radio-Interferometer, das für die gleichzeitige Entdeckung von FRBs und deren Lokalisierung im Bogensekundenmaßstab gebaut wurde. Der DSA-110 durchlief die wissenschaftliche Inbetriebnahme und führte Beobachtungen zwischen Februar 2022 und März 2024 durch. Er nutzte einen kohärenten Kern von 48 Antennen mit 4,65 m Durchmesser für die FRB-Suche sowie 15 Auslegerantennen (maximale Basislinie von 2,5 km) für die Lokalisierung. Jede Antenne ist mit einem dual-polarisierten 1,28–1,53-GHz-Empfänger bei Umgebungstemperatur ausgestattet. Ein speziell entworfener rauscharmer Verstärker, der eine Rauschtemperatur von 7 K liefert, war zentral für die Erreichung der Empfindlichkeit gegenüber FRBs von 1,9 Jy ms (für millisekundendauernde Ereignisse). Eine Echtzeitsuche nach FRBs mit einer Abtastrate von 0,262 ms und einem Dispersionsmaß (DM) von bis zu 1.500 pc cm⁻³ wurde durchgeführt.
+Translation De->Eng: json
+
+```
+("translation": "A radio interferometer built to discover and locate Fast Radio Bursts (FRBs) at the Owens Valley Radio Observatory (OVRO) in California, the DSA-110 is a radio interferometer designed to detect FRBs in the millisecond scale and locate them in the parsec scale.")("translation": "The DSA-110, located at the Owens Valley Radio Observatory (OVRO) in Bishop, California, is a radio interferometer built to detect and locate Fast Radio Bursts (FRBs) in the millisecond scale and their location in the parsec scale.")("translation": "The DSA-110, located at the Owens Valley Radio Observatory (OVRO) in Bishop, California, is a radio interferometer built to detect Fast Radio Bursts (FRBs) in the millisecond scale and locate them in the parsec scale.")("translation": "The DSA-110 is a radio interferometer built to discover and locate Fast Radio Bursts (FRBs) at the Owens Valley Radio Observatory (OVRO) in California, utilizing a coherent core of 48 antennas with 4.65 m diameter for FRB detection, and 15 outrunner antennas for localization.")
+
+-----------------------------------------------------

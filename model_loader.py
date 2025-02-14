@@ -13,7 +13,8 @@ class ModelLoader:
                 verbose=False,
                 temperature=0.1,
                 top_k=40,
-                top_p=0.9
+                top_p=0.9,
+                n_ctx=1024
             )
             logger.debug("Successfully loaded model '%s'", model_name)
             return {"name": model_name, "model": model}

@@ -13,9 +13,10 @@ class PromptStrategy(ABC):
         pass
 
 
-class ZeroShotStrategy(PromptStrategy):
+class ZeroShotTechnique(PromptStrategy):
     def translate_to_german(self, model, text_to_translate: str) -> str:
-        prompt = f"Translate the following text into German. Only return the translation:\n{text_to_translate}"
+        prompt = f"""Translate this text into German. Only return the translation:
+        \n{text_to_translate}"""
         logger.debug("ZeroShotStrategy translate_to_german: prompt=%r", prompt)
         response = model(prompt, max_tokens=250)
         # We assume the model returns a dict with response["choices"][0]["text"]
@@ -23,144 +24,333 @@ class ZeroShotStrategy(PromptStrategy):
         return translation
 
     def translate_to_english(self, model, text_to_translate: str) -> str:
-        prompt = f"Translate the following text into English. Only return the translation:\n{text_to_translate}"
+        prompt = f"""Translate this text into English. Only return the translation:
+        \n{text_to_translate}"""
         logger.debug("ZeroShotStrategy translate_to_english: prompt=%r", prompt)
         response = model(prompt, max_tokens=250)
         translation = response["choices"][0]["text"].strip()
         return translation
 
 
-class InstructionStrategy(PromptStrategy):
+class ZeroShotTechniqueJSONOutput(PromptStrategy):
     def translate_to_german(self, model, text_to_translate: str) -> str:
-        prompt = f"Translate the following text into German. Only write the necessary words. Be as precise as possible. Take grammar into account. Only return the translation:\n{text_to_translate}"
+        prompt = f"""Translate this text into German. Output only in this JSON format:
+        ("translation": "your_translation_here")\n{text_to_translate}"""
+        logger.debug("ZeroShotStrategy translate_to_german: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        # We assume the model returns a dict with response["choices"][0]["text"]
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+    def translate_to_english(self, model, text_to_translate: str) -> str:
+        prompt = f"""Translate this text into English. Output only in this JSON format:
+        ("translation": "your_translation_here")\n{text_to_translate}"""
+        logger.debug("ZeroShotStrategy translate_to_english: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+
+class ZeroShotTechniqueHighlightOnly(PromptStrategy):
+    def translate_to_german(self, model, text_to_translate: str) -> str:
+        prompt = f"""Translate this text into German. *Only* return the translation:
+        \n{text_to_translate}"""
+        logger.debug("ZeroShotStrategy translate_to_german: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        # We assume the model returns a dict with response["choices"][0]["text"]
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+    def translate_to_english(self, model, text_to_translate: str) -> str:
+        prompt = f"""Translate this text into English. *Only* return the translation:
+        \n{text_to_translate}"""
+        logger.debug("ZeroShotStrategy translate_to_english: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+
+class ZeroShotTechniqueTranslationTextFirst(PromptStrategy):
+    def translate_to_german(self, model, text_to_translate: str) -> str:
+        prompt = f"""{text_to_translate}\n
+        Translate this text into German. Only return the translation."""
+        logger.debug("ZeroShotStrategy translate_to_german: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        # We assume the model returns a dict with response["choices"][0]["text"]
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+    def translate_to_english(self, model, text_to_translate: str) -> str:
+        prompt = f"""{text_to_translate}\n
+        Translate this text into English. Only return the translation."""
+        logger.debug("ZeroShotStrategy translate_to_english: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+
+class ZeroShotTechniqueConcretePromptEnding(PromptStrategy):
+    def translate_to_german(self, model, text_to_translate: str) -> str:
+        prompt = f"""Translate this text into German. Only return the translation:
+        \n{text_to_translate}<|endofprompt|>."""
+        logger.debug("ZeroShotStrategy translate_to_german: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        # We assume the model returns a dict with response["choices"][0]["text"]
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+    def translate_to_english(self, model, text_to_translate: str) -> str:
+        prompt = f"""Translate this text into English. Only return the translation:
+        \n{text_to_translate}<|endofprompt|>."""
+        logger.debug("ZeroShotStrategy translate_to_english: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+
+class ZeroShotTechniqueAllTogether(PromptStrategy):
+    def translate_to_german(self, model, text_to_translate: str) -> str:
+        prompt = f"""{text_to_translate}\n
+        Translate this text into German. Output *only* in this JSON format:
+        ("translation": "your_translation_here")<|endofprompt|>."""
+        logger.debug("ZeroShotStrategy translate_to_german: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        # We assume the model returns a dict with response["choices"][0]["text"]
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+    def translate_to_english(self, model, text_to_translate: str) -> str:
+        prompt = f"""{text_to_translate}\n
+        Translate this text into English. Output *only* in this JSON format:
+        ("translation": "your_translation_here")<|endofprompt|>."""
+        logger.debug("ZeroShotStrategy translate_to_english: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+
+class InstructionTechnique(PromptStrategy):
+    def translate_to_german(self, model, text_to_translate: str) -> str:
+        prompt = f"{text_to_translate}\n Translate the text into German. *Only* write the necessary words. Be as precise as possible. *Only* return the translation.<|endofprompt|>"
         logger.debug("InstructionStrategy translate_to_german: prompt=%r", prompt)
         response = model(prompt, max_tokens=250)
         translation = response["choices"][0]["text"].strip()
         return translation
 
     def translate_to_english(self, model, text_to_translate: str) -> str:
-        prompt = f"Translate the following text into English. Only write the necessary words. Be as precise as possible. Take grammar into account. Only return the translation:\n{text_to_translate}"
+        prompt = f"{text_to_translate}\n Translate the text into English. *Only* write the necessary words. Be as precise as possible. *Only* return the translation.<|endofprompt|>"
         logger.debug("InstructionStrategy translate_to_english: prompt=%r", prompt)
         response = model(prompt, max_tokens=250)
         translation = response["choices"][0]["text"].strip()
         return translation
 
 
-class PersonaStrategy(PromptStrategy):
+class PersonaTechnique(PromptStrategy):
     def translate_to_german(self, model, text_to_translate: str) -> str:
-        prompt = f"Role: You are an expert in translation. You studied english for 45 years. You are born in germany and live in germany. Your parents raised you bilingual. Translate the following text into German. Only return the translation:\n{text_to_translate}"
+        prompt = f"""{text_to_translate}\n
+        Role: You are an expert in translation. You studied english for 45 years. 
+        You are born in germany and live in germany. Your parents raised you bilingual. 
+        Translate the text into German. *Only* return the translation.<|endofprompt|>"""
         logger.debug("PersonaStrategy translate_to_german: prompt=%r", prompt)
         response = model(prompt, max_tokens=250)
         translation = response["choices"][0]["text"].strip()
         return translation
 
     def translate_to_english(self, model, text_to_translate: str) -> str:
-        prompt = f"Role: You are an expert in translation. You studied english for 45 years. You are born in germany and live in germany. Your parents raised you bilingual. Translate the following text into English. Only return the translation:\n{text_to_translate}"
+        prompt = f"""{text_to_translate}\n
+        Role: You are an expert in translation. You studied english for 45 years. 
+        You are born in germany and live in germany. Your parents raised you bilingual. 
+        Translate the text into English. *Only* return the translation.<|endofprompt|>"""
         logger.debug("PersonaStrategy translate_to_english: prompt=%r", prompt)
         response = model(prompt, max_tokens=250)
         translation = response["choices"][0]["text"].strip()
         return translation
 
 
-class FewShotStrategy(PromptStrategy):
+class FewShotTechniqueWithExampleToken(PromptStrategy):
     def translate_to_german(self, model, text_to_translate: str) -> str:
-        prompt = f"Translate the following text into German. Here are two examples: <example1>The Republicans secured a majority in the election. =  Die Republikaner sicherten sich bei der Wahl eine Mehrheit.<endExample1> <example2>During the week, I always sleep long. = Unter der Woche schlafe ich immer lange.<endExample2> Only return the translation:\n{text_to_translate}"
+        prompt = f"""Translate the following text into German. Here are two examples:
+        <example1>The Republicans secured a majority in the election. =  Die Republikaner sicherten sich bei der Wahl eine Mehrheit.<endExample1>
+        <example2>During the week, I always sleep long. = Unter der Woche schlafe ich immer lange.<endExample2>
+        Only return the translation:\n{text_to_translate}"""
         logger.debug("FewShotStrategy translate_to_german: prompt=%r", prompt)
         response = model(prompt, max_tokens=250)
         translation = response["choices"][0]["text"].strip()
         return translation
 
     def translate_to_english(self, model, text_to_translate: str) -> str:
-        prompt = f"Translate the following text into English. Here are two examples: <example1>Die Republikaner sicherten sich bei der Wahl eine Mehrheit. =  The Republicans secured a majority in the election.<endExample1><example2>Unter der Woche schlafe ich immer lange. = During the week, I always sleep long.<endExample2> Only return the translation:\n{text_to_translate}"
+        prompt = f"""Translate the following text into English. Here are two examples: 
+        <example1>Die Republikaner sicherten sich bei der Wahl eine Mehrheit. =  The Republicans secured a majority in the election.<endExample1>
+        <example2>Unter der Woche schlafe ich immer lange. = During the week, I always sleep long.<endExample2> Only return the translation:\n{text_to_translate}"""
         logger.debug("FewShotStrategy translate_to_english: prompt=%r", prompt)
         response = model(prompt, max_tokens=250)
         translation = response["choices"][0]["text"].strip()
         return translation
 
 
-class AllTogetherStrategy(PromptStrategy):
+class FewShotTechniqueTranslationTextFirst(PromptStrategy):
     def translate_to_german(self, model, text_to_translate: str) -> str:
-        prompt = f"Role: You are an expert in translation. You studied english for 45 years. You are born in germany and live in germany. Your parents raised you bilingual. Translate the following text into German. Here are two examples: <example1>The Republicans secured a majority in the election. =  Die Republikaner sicherten sich bei der Wahl eine Mehrheit.<endExample1> <example2>During the week, I always sleep long. = Unter der Woche schlafe ich immer lange.<endExample2> Use natural language and only write the necessary words. Only return the translation:\n{text_to_translate}"
+        prompt = f"""{text_to_translate}\n
+        Translate the text into German. Here are two examples:
+        The Republicans secured a majority in the election. =  Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        During the week, I always sleep long. = Unter der Woche schlafe ich immer lange.
+        Only return the translation."""
+        logger.debug("FewShotStrategy translate_to_german: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+    def translate_to_english(self, model, text_to_translate: str) -> str:
+        prompt = f"""{text_to_translate}\n
+        Translate the text into English. Here are two examples:
+        The Republicans secured a majority in the election. =  Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        During the week, I always sleep long. = Unter der Woche schlafe ich immer lange.
+        Only return the translation."""
+        logger.debug("FewShotStrategy translate_to_english: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+
+class FewShotTechnique(PromptStrategy):
+    def translate_to_german(self, model, text_to_translate: str) -> str:
+        prompt = f"""Translate the following text into German. Here are two examples:
+        The Republicans secured a majority in the election. =  Die Republikaner sicherten sich bei der Wahl eine Mehrheit.
+        During the week, I always sleep long. = Unter der Woche schlafe ich immer lange.
+        Only return the translation:\n{text_to_translate}"""
+        logger.debug("FewShotStrategy translate_to_german: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+    def translate_to_english(self, model, text_to_translate: str) -> str:
+        prompt = f"""Translate the following text into English. Here are two examples: 
+        Die Republikaner sicherten sich bei der Wahl eine Mehrheit. =  The Republicans secured a majority in the election.
+        Unter der Woche schlafe ich immer lange. = During the week, I always sleep long.
+        Only return the translation:\n{text_to_translate}"""
+        logger.debug("FewShotStrategy translate_to_english: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+
+class FewShotTechniqueContinueAfterExamples(PromptStrategy):
+    def translate_to_german(self, model, text_to_translate: str) -> str:
+        prompt = f"""Translate the following text into German. Here are two examples:
+        English: "Good night." => German: "Gute Nacht."
+        English: "See you later." => German: "Auf Wiedersehen."
+        English: "{text_to_translate}" => German:"""
+        logger.debug("FewShotStrategy translate_to_german: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+    def translate_to_english(self, model, text_to_translate: str) -> str:
+        prompt = f"""Translate the following text into English. Here are two examples: 
+        German: "Gute Nacht." => English: "Good night."
+        German: "Auf Wiedersehen." => English: "See you later."
+        German: "{text_to_translate}" => English:"""
+        logger.debug("FewShotStrategy translate_to_english: prompt=%r", prompt)
+        response = model(prompt, max_tokens=250)
+        translation = response["choices"][0]["text"].strip()
+        return translation
+
+
+class AllTogetherTechnique(PromptStrategy):
+    def translate_to_german(self, model, text_to_translate: str) -> str:
+        prompt = f"""{text_to_translate}\n
+        Role: You are an expert in translation. You studied english for 45 years. 
+        You are born in germany and live in germany. Your parents raised you bilingual. 
+        English: "Good night." => German: "Gute Nacht."
+        English: "See you later." => German: "Auf Wiedersehen."
+        Translate the text into German. *Only* return the translation.<|endofprompt|>"""
         logger.debug("AllTogetherStrategy translate_to_german: prompt=%r", prompt)
         response = model(prompt, max_tokens=250)
         translation = response["choices"][0]["text"].strip()
         return translation
 
     def translate_to_english(self, model, text_to_translate: str) -> str:
-        prompt = f"Role: You are an expert in translation. You studied english for 45 years. You are born in germany and live in germany. Your parents raised you bilingual. Translate the following text into English. Here are two examples: <example1>Die Republikaner sicherten sich bei der Wahl eine Mehrheit. =  The Republicans secured a majority in the election.<endExample1><example2>Unter der Woche schlafe ich immer lange. = During the week, I always sleep long.<endExample2> Use natural language and only write the necessary words. Only return the translation:\n{text_to_translate}"
+        prompt = f"""{text_to_translate}\n
+        Role: You are an expert in translation. You studied english for 45 years. 
+        You are born in germany and live in germany. Your parents raised you bilingual. 
+        German: "Gute Nacht." => English: "Good night."
+        German: "Auf Wiedersehen." => English: "See you later."
+        Translate the text into English. *Only* return the translation.<|endofprompt|>"""
         logger.debug("AllTogetherStrategy translate_to_english: prompt=%r", prompt)
         response = model(prompt, max_tokens=250)
         translation = response["choices"][0]["text"].strip()
         return translation
 
 
-class SelfCorrectStrategy(PromptStrategy):
+class SelfCorrectTechnique(PromptStrategy):
     def translate_to_german(self, model, text_to_translate: str) -> str:
-        first_prompt = f"Translate the following text into German. Only return the translation:\n{text_to_translate}"
-        logger.debug("SelfCorrectStrategy to_german: first_prompt=%r", first_prompt)
-        reasoning_response = model(first_prompt, max_tokens=250)
-        reasoning_text = reasoning_response["choices"][0]["text"].strip()
+        messages = [
+            {"role": "user", "content": f"{text_to_translate}\nTranslate this text into German."}
+        ]
+        logger.debug("SelfCorrectTechnique to_german: initial_message=%r", messages[0])
 
-        final_prompt = f"Reflect on yourself and correct all mistakes so that the text is translated as best as possible.\n{reasoning_text}"
-        logger.debug("SelfCorrectStrategy to_german: final_prompt=%r", final_prompt)
-        final_response = model(final_prompt, max_tokens=250)
-        translation = final_response["choices"][0]["text"].strip()
+        reasoning_response = model.create_chat_completion(messages, max_tokens=250)
+        reasoning_text = reasoning_response["choices"][0]["message"]["content"].strip()
+
+        messages.append({"role": "assistant", "content": reasoning_text})
+        messages.append({"role": "user", "content": "Reflect on yourself and correct all mistakes of the previous translation. *Only* return the final translation:"})
+
+        logger.debug("SelfCorrectTechnique to_german: messages=%r", messages)
+        final_response = model.create_chat_completion(messages, max_tokens=250)
+        translation = final_response["choices"][0]["message"]["content"].strip()
         return translation
 
     def translate_to_english(self, model, text_to_translate: str) -> str:
-        first_prompt = f"Translate the following text to English. Only return the translation:\n{text_to_translate}\n"
-        logger.debug("SelfCorrectStrategy to_english: first_prompt=%r", first_prompt)
-        reasoning_response = model(first_prompt, max_tokens=250)
-        reasoning_text = reasoning_response["choices"][0]["text"].strip()
+        messages = [
+            {"role": "user", "content": f"{text_to_translate}\nTranslate this text into English."}
+        ]
+        logger.debug("SelfCorrectTechnique to_english: initial_message=%r", messages[0])
 
-        final_prompt = f"Reflect on yourself and correct all mistakes so that the text is translated as best as possible.\n{reasoning_text}"
-        logger.debug("SelfCorrectStrategy to_english: final_prompt=%r", final_prompt)
-        final_response = model(final_prompt, max_tokens=250)
-        translation = final_response["choices"][0]["text"].strip()
+        reasoning_response = model.create_chat_completion(messages, max_tokens=250)
+        reasoning_text = reasoning_response["choices"][0]["message"]["content"].strip()
+
+        messages.append({"role": "assistant", "content": reasoning_text})
+        messages.append({"role": "user", "content": "Reflect on yourself and correct all mistakes of the previous translation. *Only* return the final translation:"})
+
+        logger.debug("SelfCorrectTechnique to_english: messages=%r", messages)
+        final_response = model.create_chat_completion(messages, max_tokens=250)
+        translation = final_response["choices"][0]["message"]["content"].strip()
         return translation
 
 
-class ComparisonStrategy(PromptStrategy):
+class ComparisonTechnique(PromptStrategy):
     def translate_to_german(self, model, text_to_translate: str) -> str:
-        first_prompt = f"Translate the following text into German. Only return the translation:\n{text_to_translate}"
-        logger.debug("comparisonStrategy to_german: first_prompt=%r", first_prompt)
-        reasoning_response = model(first_prompt, max_tokens=200)
-        first_text = reasoning_response["choices"][0]["text"].strip()
+        messages = [
+            {"role": "user", "content": f"{text_to_translate}\nProvide *two* distinct german translations of this text."}
+        ]
+        logger.debug("SelfCorrectTechnique to_german: initial_message=%r", messages[0])
 
-        second_prompt = f"Translate the following text into German. Only return the translation:\n{text_to_translate}"
-        logger.debug("comparisonStrategy to_german: second_prompt=%r", second_prompt)
-        reasoning_response = model(second_prompt, max_tokens=200)
-        second_text = reasoning_response["choices"][0]["text"].strip()
+        reasoning_response = model.create_chat_completion(messages, max_tokens=400)
+        reasoning_text = reasoning_response["choices"][0]["message"]["content"].strip()
 
-        #third_prompt = f"Translate the following text into German. Only return the translation:\n{text_to_translate}"
-        #logger.debug("comparisonStrategy to_german: third_prompt=%r", third_prompt)
-        #reasoning_response = model(third_prompt, max_tokens=250)
-        #third_text = reasoning_response["choices"][0]["text"].strip()
+        messages.append({"role": "assistant", "content": reasoning_text})
+        messages.append({"role": "user", "content": "Now determine the best translation of the original text. *Only* return the best translation:"})
 
-        final_prompt = f"Out of all the following translations, which one is the best? Only repeat the best one. No yes or no, only repeat the translated text. \n<first>{first_text}<first>\n<second>{second_text}<second>"#\n<third>{third_text}<third>"
-        logger.debug("comparisonStrategy to_german: final_prompt=%r", final_prompt)
-        final_response = model(final_prompt, max_tokens=250)
-        translation = final_response["choices"][0]["text"].strip()
+        logger.debug("SelfCorrectTechnique to_german: messages=%r", messages)
+        final_response = model.create_chat_completion(messages, max_tokens=250)
+        translation = final_response["choices"][0]["message"]["content"].strip()
         return translation
 
     def translate_to_english(self, model, text_to_translate: str) -> str:
-        first_prompt = f"Translate the following text to English. Only return the translation:\n{text_to_translate}\n"
-        logger.debug("comparisonStrategy to_english: first_prompt=%r", first_prompt)
-        reasoning_response = model(first_prompt, max_tokens=200)
-        first_text = reasoning_response["choices"][0]["text"].strip()
+        messages = [
+            {"role": "user", "content": f"{text_to_translate}\nProvide *two* distinct english translations of this text."}
+        ]
+        logger.debug("SelfCorrectTechnique to_german: initial_message=%r", messages[0])
 
-        second_prompt = f"Translate the following text to English. Only return the translation:\n{text_to_translate}\n"
-        logger.debug("comparisonStrategy to_english: second_prompt=%r", second_prompt)
-        reasoning_response = model(second_prompt, max_tokens=200)
-        second_text = reasoning_response["choices"][0]["text"].strip()
+        reasoning_response = model.create_chat_completion(messages, max_tokens=400)
+        reasoning_text = reasoning_response["choices"][0]["message"]["content"].strip()
 
-        #third_prompt = f"Translate the following text to English. Only return the translation:\n{text_to_translate}\n"
-        #logger.debug("comparisonStrategy to_english: third_prompt=%r", third_prompt)
-        #reasoning_response = model(third_prompt, max_tokens=250)
-        #third_text = reasoning_response["choices"][0]["text"].strip()
+        messages.append({"role": "assistant", "content": reasoning_text})
+        messages.append({"role": "user", "content": "Now determine the best translation of the original text. *Only* return the best translation:"})
 
-        final_prompt = f"Out of all the following translations, which one is the best? Only repeat the best one. No yes or no, only repeat the translated text. \n<first>{first_text}<first>\n<second>{second_text}<second>"#\n<third>{third_text}<third>"
-        logger.debug("comparisonStrategy to_english: final_prompt=%r", final_prompt)
-        final_response = model(final_prompt, max_tokens=250)
-        translation = final_response["choices"][0]["text"].strip()
+        logger.debug("SelfCorrectTechnique to_german: messages=%r", messages)
+        final_response = model.create_chat_completion(messages, max_tokens=250)
+        translation = final_response["choices"][0]["message"]["content"].strip()
         return translation
+
+

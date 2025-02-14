@@ -1,0 +1,93 @@
+Row idx=0, complexity=easy
+Original English : Felix is fed up: Mom is always on the go. But nobody will tell him why that is. For Felix, it's clear: his mother is a secret agent. When he receives a mysterious letter on his tenth birthday, his suspicion seems to be confirmed. Together with his best friend Lina, he sets out to uncover the secret of mom's job. Before they know it, the two are in the middle of their first exciting case as budding secret agents.
+Translation Eng->De: Die Mutter des Jungen ist eine Geheimagentin. = Die Geheimagentin seiner Mutter. 
+        Die beiden sind in der Mitte eines ersten aufregenden Falls als jüngste Agenten. = Die beiden sind in der Mitte ihres ersten aufregenden Falls als jüngste Agenten. 
+        Felix ist wütend: Die Mutter ist immer auf dem Weg. Aber niemand sagt ihm, warum. =  Felix ist wütend: Die Mutter ist immer unterwegs. Aber niemand sagt ihm, warum.
+        Für Felix ist es klar: Die Mutter ist eine Geheimagentin. =  Für Felix ist es klar: Seine Mutter ist eine Geheimagentin.
+        Together with his best friend Lina, he sets out to uncover the secret of mom's job. =  Together mit seinem besten Freund Lina, beginnt er, die Geheimnisse seiner Mutter zu enthüllen. 
+        When he receives a mysterious letter on his tenth birthday, his suspicion seems to be confirmed. =  Wenn er einen Rätselhaften Brief zum zehnten Geburtstag erhält, sche
+
+Original German  : Felix hat es satt: Ständig ist Mama unterwegs. Doch warum das so ist, will ihm niemand verraten. Für Felix ist daher klar: Seine Mutter ist eine Geheimagentin. Als er an seinem zehnten Geburtstag einen rätselhaften Brief erhält, scheint sich seine Vermutung zu bestätigen. Zusammen mit seiner besten Freundin Lina macht er sich daran, das Geheimnis um Mamas Arbeit zu lüften. Ehe sie sich versehen, stecken die beiden mitten in ihrem ersten spannenden Fall als angehende Geheimagenten.
+Translation De->Eng: 
+
+-----------------------------------------------------
+Row idx=1, complexity=news_gen
+Original English : The approximately 1,400 deployed officers have therefore arrested six suspected pickpockets at the start of the carnival and are now also investigating several cases of bodily harm and sexual offenses. Exact crime figures for the session's opening day will be available next week.
+Translation Eng->De: Die Polizei hat rund um das Fest einen Großauftrag. Sie sicherten sich sechs verdächtige Taschendiebe fest und untersuchen weitere Fälle von körperlicher Schädigung und sexuellem Missbrauch. Die genauen Verbrechenszahlen des ersten Tages des Festes werden nächsten Woche verfügbar sein.
+        Note: 
+        *   "carnival" corresponds to "Fest"
+        *   "pickets" is "Taschendiebe", "pickpockets" in informal English usage
+        *   "bodily harm" is "körperliche Schädigung"
+        *   "sexual offenses" is "sexueller Missbrauch"
+        *   "deployed officers" corresponds to "aufgebotene Polizeibeamte"
+        *   "exact crime figures" corresponds to "genauen Verbrechenszahlen" or "exakten Zahlen" 
+        *   "session's opening day" corresponds to "ersten Tag des Festes" or "Eröffnungstag des Festes". 
+        *   "next week" corresponds to "nächsten
+
+Original German  : Die rund 1.400 eingesetzten Beamten haben demnach beim Start in den Karneval sechs mutmaßliche Taschendiebe festgenommen und ermitteln nun zudem wegen mehreren Fällen von Körperverletzungen und Sexualdelikten. Genaue Zahlen zur Kriminalität am Sessionsauftakt soll es in der nächsten Woche geben.
+Translation De->Eng: Die rund 1.400 Beamten haben demnach beim Start in den Karneval sechs mutmaßliche Taschendiebe festgenommen und ermitteln nun zudem wegen mehrerer Fällen von Körperverletzungen und Sexualdelikten.
+
+-----------------------------------------------------
+Row idx=2, complexity=news_spec
+Original English : The head of state also has the right to appoint interim ministers during Senate recesses lasting at least ten days. This is to ensure the government's ability to function. The ministers appointed in this manner must be confirmed by the Senate by the end of the session period to remain in office.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats in the election. However, the Democrats could delay the appointment process in the relevant committees.
+Translation Eng->De: (No explanation or sentence.) Die Republikaner sicherten sich bei der Wahl eine Mehrheit der Senatssitze. Die Senatssitze sind mindestens 53 von 100. Die Demokraten könnten die Einstellung des Ministers der relevanten Ausschüsse verlangsamen. Die verlangten Minister sind innerhalb der Sitzungsphase des Senates bis zum Ende der Sitzungsphase bestätigt. Für die Befugnis, Senatssitz zu besetzen, muss die Wahl erst nach der Wahl durchgeführt werden. (Das Problem: Der Text wird nicht korrekt übersetzt) Die Verfassung des Landes schreibt vor, dass der Präsident oder die Regierung während der Wahlen eine Mehrheit in dem Senat erlangen muss. Dies stellt sicher, dass die Regierung weiterhin in der Lage ist, zu funktionieren. Die für das Amt geeigneten Minister werden in dieser Weise ernannt, um sicherzustellen, dass die Regierung weiterhin in der Lage ist zu funktionieren. Die im Amt befindlichen Minister müssen bis zum Ende der Sitzungsphase des Sen
+
+Original German  : Der Staatschef hat zugleich aber das Recht, vorläufig Minister während mindestens zehn Tage langen Sitzungspausen des Senats einzusetzen. Das soll die Handlungsfähigkeit der Regierung gewährleisten. Die so ernannten Minister müssen dann bis Ende der Sitzungsperiode vom Senat bestätigt werden, um weiter im Amt zu bleiben.
+
+Die Republikaner sicherten sich bei der Wahl eine Mehrheit im Senat mit mindestens 53 der 100 Sitze. Die Demokraten könnten aber das Ernennungsverfahren in den zuständigen Ausschüssen verzögern.
+Translation De->Eng: No translation of the example sentences. 
+
+Der Staatschef hat zugleich aber das Recht, vorläufig Minister während mindestens zehn Tage langen Sitzungspausen des Senats einzusetzen. Das soll die Handlungsfähigkeit der Regierung gewährleisten. Die so ernannten Minister müssen dann bis Ende der Sitzungsperiode vom Senat bestätigt werden, um weiter im Amt zu bleiben.
+
+The head of state has the right, in addition, to provisionally appoint ministers during at least ten days of the Senate's recesses. This is to ensure the government's operational capability. The so appointed ministers must then be confirmed by the Senate until the end of the session period to remain in office.
+
+-----------------------------------------------------
+Row idx=3, complexity=pop_science
+Original English : There is no question that climate change is intensifying heatwaves in South Asia. Continuous attribution studies that examine the connections between weather phenomena and climate change confirm this. For example, a report by World Weather Attribution found that the likelihood of heatwaves has increased 30-fold since the 19th century. Additionally, an attribution study conducted by the UK's Met Office reveals that the risk of unprecedented heatwaves in India and Pakistan has increased 100-fold due to climate change.
+Translation Eng->De: Die Intensivierung von Erwärmungswellen in Südasien ist kein Thema. =  Klimawandel verstärkt die Auswirkungen von Erwärmungswellen in Südasien.
+        Die Wahrscheinlichkeit von Erwärmungswellen hat sich seit dem 19. Jahrhundert 30-mal erhöht. =  Die Wahrscheinlichkeit von Erwärmungswellen hat sich seit dem 19. Jahrhundert um das 30-fache erhöht.
+        Die Risiken für unvorhersehbare Erwärmungswellen in Indien und Pakistan haben sich um das 100-fache erhöht. =  Die Risiken für unvorhersehbare Erwärmungswellen in Indien und Pakistan haben sich um das 100-fache erhöht.
+
+Original German  : Dass der Klimawandel die Hitzewellen in Südasien verstärkt, steht außer Frage. Immer neue Attributionsstudien, die Zusammenhänge zwischen Wetterphänomenen und dem Klimawandel untersuchen, belegen das. So ergab ein Bericht von World Weather Attribution, dass die Wahrscheinlichkeit für Hitzewellen seit dem 19. Jahrhundert 30-fach erhöht ist. Und eine vom britischen Met Office durchgeführte Attributionsstudie zeigt auf, dass die Gefahr beispielloser Hitzewellen in Indien und Pakistan durch den Klimawandel um das Hundertfache gestiegen ist.
+Translation De->Eng: The Klimawandel verstärkt die Hitzewellen in Südasien.  
+        The climate change enhances the heat waves in South Asia. 
+        (or) The climate change increases the heat waves in South Asia.
+        (or) The climate change amplifies the heat waves in South Asia.
+
+        The Klimawandel verstärkt die Wahrscheinlichkeit für Hitzewellen.  
+        The climate change increases the probability of heat waves. 
+        (or) The climate change amplifies the probability of heat waves. 
+
+        The Klimawandel verstärkt die Gefahr beispielloser Hitzewellen.  
+        The climate change increases the risk of extreme heat waves.
+        (or) The climate change amplifies the risk of extreme heat waves. 
+
+        World Weather Attribution.  
+        World Weather Attribution.
+
+        A Bericht von World Weather Attribution.  
+        A report by World Weather Attribution.
+
+        Um das Zusammenhänge zwischen Wetterphänomenen und dem Klimawandel zu untersuchen, belegen die Attributionsstudien.  
+        To investigate the relationship between weather phenomena and climate change, the attribution studies confirm.
+
+        The Wahrscheinlichkeit für
+
+-----------------------------------------------------
+Row idx=4, complexity=science
+Original English : The DSA-110, situated at the Owens Valley Radio Observatory (OVRO) near Bishop, California, is a radio interferometer built for simultaneous FRB discovery and arcsecond-scale localization. The DSA-110 underwent science commissioning and performed observations between February 2022 and March 2024 with a coherent core of 48 4.65-m antennas used for FRB searching combined with 15 outrigger antennas (maximum baseline of 2.5 km) used for localization. Each antenna is equipped with a dual-polarization ambient-temperature 1.28-1.53-GHz receiver. A custom low-noise amplifier design delivering 7 K noise temperature13 was central to achieving sensitivity to 1.9 Jy ms FRBs (for millisecond-duration events). A real-time search for FRBs with 0.262-ms sampling and a dispersion measure (DM) range up to 1,500 pc cm-3 was conducted.
+Translation Eng->De: Please.
+
+Die DSA-110, im Owens Valley Radio Observatory (OVRO) in Bishop, Kalifornien, ist ein Radiointerferometer, das für die gleichzeitige Entdeckung von FRBs (Fast Radio Bursts) und die Lokalisation von Arcsecond-Skalen verwendet wurde. Das DSA-110 wurde wissenschaftliche Kommissionierung durchlaufen und führte zwischen Februar 2022 und März 2024 mit einem kohärenten Kern aus 48 4,65-m Antennen für die FRB-Überwachung in Kombination mit 15 Außenanlagenantennen (maximale Baslinie von 2,5 km) für die Lokalisation verwendet. Jede Antenne ist mit einem dualpolaren Empfänger ausgestattet, der für die Empfängung im Umgebungs-temperaturraum bei 1,28-1,53 GHz verwendet wurde. Die Besonderheit eines speziellen Designs von Low-noise-Amplifikatoren, das eine Empfänglichkeit von 7 K erreichen konnte, war zentral für die Empfindlichkeit von 1,
+
+Original German  : Der DSA-110, der sich am Owens Valley Radio Observatory (OVRO) in der Nähe von Bishop, Kalifornien, befindet, ist ein Radio-Interferometer, das für die gleichzeitige Entdeckung von FRBs und deren Lokalisierung im Bogensekundenmaßstab gebaut wurde. Der DSA-110 durchlief die wissenschaftliche Inbetriebnahme und führte Beobachtungen zwischen Februar 2022 und März 2024 durch. Er nutzte einen kohärenten Kern von 48 Antennen mit 4,65 m Durchmesser für die FRB-Suche sowie 15 Auslegerantennen (maximale Basislinie von 2,5 km) für die Lokalisierung. Jede Antenne ist mit einem dual-polarisierten 1,28–1,53-GHz-Empfänger bei Umgebungstemperatur ausgestattet. Ein speziell entworfener rauscharmer Verstärker, der eine Rauschtemperatur von 7 K liefert, war zentral für die Erreichung der Empfindlichkeit gegenüber FRBs von 1,9 Jy ms (für millisekundendauernde Ereignisse). Eine Echtzeitsuche nach FRBs mit einer Abtastrate von 0,262 ms und einem Dispersionsmaß (DM) von bis zu 1.500 pc cm⁻³ wurde durchgeführt.
+Translation De->Eng: The DSA-110, built to locate FRBs and locate them in the millisecond scale, was installed at the Owens Valley Radio Observatory (OVRO) in Bishop, California. = 
+        Die DSA-110, gebaut, um FRBs zu lokalisieren und sie im Millisekundenmaßstab zu lokalisieren, wurde an das Owens Valley Radio Observatory (OVRO) in Bishop, Kalifornien, installiert. 
+        Der DSA-110, der sich am Owens Valley Radio Observatory (OVRO) in der Nähe von Bishop, Kalifornien, befindet, ist ein Radio-Interferometer. = 
+        Die DSA-110, die sich am Owens Valley Radio Observatory (OVRO) in der Nähe von Bishop, Kalifornien, befindet, ist ein Radio-Interferometer. 
+        Der DSA-110 durchlief die wissenschaftliche Inbetriebnahme und führte Beobachtungen zwischen Februar 2022 und März 2024 durch. = 
+        Die DSA-110 durchlief die wissenschaftliche Inbetriebnahme und führte Beobachtungen zwischen Februar 202
+
+-----------------------------------------------------

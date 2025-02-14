@@ -1,0 +1,90 @@
+Row idx=0, complexity=easy
+Original English : Felix is fed up: Mom is always on the go. But nobody will tell him why that is. For Felix, it's clear: his mother is a secret agent. When he receives a mysterious letter on his tenth birthday, his suspicion seems to be confirmed. Together with his best friend Lina, he sets out to uncover the secret of mom's job. Before they know it, the two are in the middle of their first exciting case as budding secret agents.
+Translation Eng->De: Together, they have to outsmart the bad guys, solve puzzles and unravel the mystery of the mysterious letter. But the more they learn, the more they realize that their mom is not just a secret agent, but also in great danger. So Felix and Lina have to come up with a plan to rescue their mom and put an end to the bad guys' plans.
+        
+Übersetzung:
+        
+Felix ist müde: Mutter ist immer unterwegs. Aber niemand wird es ihm sagen, warum das so ist. Für Felix ist das klar: Mutter ist eine geheime Agentin. Als er auf seinem zehnten Geburtstag einen geheimnisvollen Brief erhält, scheint seine Vermutung bestätigt zu sein. Zusammen mit seiner besten Freundin Lina macht er sich auf, das Geheimnis von Moms Beruf aufzudecken. Bevor sie es sich versetzen, sind die beiden mitten im ersten spannenden Fall als jungen geheimen Agenten. Gemeinsam müssen sie den Bösewichten auswischen, Rätsel lösen und das Geheimnis des geheimnisvollen Briefes aufdecken
+
+Original German  : Felix hat es satt: Ständig ist Mama unterwegs. Doch warum das so ist, will ihm niemand verraten. Für Felix ist daher klar: Seine Mutter ist eine Geheimagentin. Als er an seinem zehnten Geburtstag einen rätselhaften Brief erhält, scheint sich seine Vermutung zu bestätigen. Zusammen mit seiner besten Freundin Lina macht er sich daran, das Geheimnis um Mamas Arbeit zu lüften. Ehe sie sich versehen, stecken die beiden mitten in ihrem ersten spannenden Fall als angehende Geheimagenten.
+Translation De->Eng: Und zwar nicht nur, um Mamas Geheimnis zu lüften, sondern um auch noch das Mysterium ihrer Mutter zu entdecken.
+
+Note: I will rate the quality of the translation based on the following criteria: grammar, vocabulary, coherence, and overall accuracy. Here is the translation:
+        
+Felix has had enough: his mother is always on the move. But nobody wants to tell him why this is so. For Felix, it's clear, therefore: his mother is a secret agent. On his tenth birthday, he receives an enigmatic letter that seems to confirm his suspicion. Together with his best friend Lina, he sets about shedding light on the mystery of his mother's work. Before they know it, they find themselves in the midst of their first exciting case as young secret agents. And not only to uncover the secret of their mother's work, but to discover the mystery of their mother as well.
+
+-----------------------------------------------------
+Row idx=1, complexity=news_gen
+Original English : The approximately 1,400 deployed officers have therefore arrested six suspected pickpockets at the start of the carnival and are now also investigating several cases of bodily harm and sexual offenses. Exact crime figures for the session's opening day will be available next week.
+Translation Eng->De: For the time being, it's not just the police that have been working around the clock to ensure the safety of the carnival visitors. The carnival's organizing committee and the city administration have also been working closely together. 
+The city administration has taken care of the security personnel, who are deployed on all carnival days. The security personnel are paid by the city administration. 
+The police have also set up a special task force, which is deployed during the carnival and has been dealing with the increasing crime figures. 
+The special task force is a team of experts from the police and is therefore better equipped to handle the increasing crime figures. 
+In addition to the special task force, the police have also set up a mobile police station, which has been stationed at the main entrance of the city for the duration of the carnival. 
+The mobile police station is staffed by police officers who are available to answer questions from the public. 
+The police have also set up a hotline for the carnival visitors to report any crimes or suspicious behavior. 
+The hotline number is 0800-1234567. 
+It is not yet possible to assess the overall safety of the carnival. The city administration and the carnival's organizing committee will be monitoring the situation closely
+
+Original German  : Die rund 1.400 eingesetzten Beamten haben demnach beim Start in den Karneval sechs mutmaßliche Taschendiebe festgenommen und ermitteln nun zudem wegen mehreren Fällen von Körperverletzungen und Sexualdelikten. Genaue Zahlen zur Kriminalität am Sessionsauftakt soll es in der nächsten Woche geben.
+Translation De->Eng: Die Ermittlungen werden weiter geführt.
+
+Translation:
+        
+Around 1,400 officers were deployed on the first day of the carnival, and they arrested six suspected pickpockets. They are also investigating several cases of assault and sex crimes. Details on the crime situation on the first day will be given next week. The investigation will continue.
+
+-----------------------------------------------------
+Row idx=2, complexity=news_spec
+Original English : The head of state also has the right to appoint interim ministers during Senate recesses lasting at least ten days. This is to ensure the government's ability to function. The ministers appointed in this manner must be confirmed by the Senate by the end of the session period to remain in office.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats in the election. However, the Democrats could delay the appointment process in the relevant committees.
+Translation Eng->De: This is because the Republicans have not yet been able to form a stable parliamentary group. A parliamentary group is formed when at least 30 members of the party meet in a general meeting and elect a chairman.
+
+The Republicans have a significant lead over the Democrats, but it is not yet certain if the Senate will be able to function. The opposition is using the Senate's recesses to delay the appointment of ministers. The opposition has called for the head of state to appoint interim ministers, as the Republicans have not yet formed a stable parliamentary group.
+
+The situation is now that the Senate has been in recess for over two weeks and the opposition is demanding that the head of state appoint interim ministers. The head of state has the right to appoint interim ministers, but only during recesses lasting at least ten days.
+
+The head of state has not yet appointed interim ministers, and the situation is becoming increasingly tense. The opposition is demanding that the head of state take action and appoint interim ministers. The head of state is under pressure from the opposition to appoint interim ministers.
+
+The head of state is under pressure from the opposition to appoint interim ministers, but the head of state is hesitant to appoint interim ministers. The head of state is waiting for the Senate to resume its session
+
+Original German  : Der Staatschef hat zugleich aber das Recht, vorläufig Minister während mindestens zehn Tage langen Sitzungspausen des Senats einzusetzen. Das soll die Handlungsfähigkeit der Regierung gewährleisten. Die so ernannten Minister müssen dann bis Ende der Sitzungsperiode vom Senat bestätigt werden, um weiter im Amt zu bleiben.
+
+Die Republikaner sicherten sich bei der Wahl eine Mehrheit im Senat mit mindestens 53 der 100 Sitze. Die Demokraten könnten aber das Ernennungsverfahren in den zuständigen Ausschüssen verzögern.
+Translation De->Eng: Die Amtsträger des Staatschefs sind in der Mehrheit, aber es fehlt noch eine Abstimmung im Senat. 
+Translated into English: 
+The head of state, however, also has the right to provisionally appoint ministers during at least ten days of Senate recess. This is to ensure the government's ability to act. Ministers thus appointed must then be confirmed by the Senate until the end of the parliamentary period in order to remain in office.
+
+The Republicans secured a majority in the Senate with at least 53 of the 100 seats. The Democrats, however, can delay the appointment procedure in the relevant committees. The state president's officials are in the majority, but a vote in the Senate is still lacking.
+
+-----------------------------------------------------
+Row idx=3, complexity=pop_science
+Original English : There is no question that climate change is intensifying heatwaves in South Asia. Continuous attribution studies that examine the connections between weather phenomena and climate change confirm this. For example, a report by World Weather Attribution found that the likelihood of heatwaves has increased 30-fold since the 19th century. Additionally, an attribution study conducted by the UK's Met Office reveals that the risk of unprecedented heatwaves in India and Pakistan has increased 100-fold due to climate change.
+Translation Eng->De: The results of these studies are clear: climate change is causing more frequent and intense heatwaves. As such, governments and societies must prepare for the impacts of climate change. This involves developing strategies to reduce the risks of extreme weather events and to adapt to the changing climate.
+        
+Die Frage, ob sich der Klimawandel in Südasien auf Hitzewellen auswirkt, ist nicht mehr zu stellen. Kontinuierliche Attribution-Studien, die die Verbindungen zwischen Wetterphänomenen und Klimawandel untersuchen, bestätigen dies. Zum Beispiel fand ein Bericht von World Weather Attribution heraus, dass die Wahrscheinlichkeit von Hitzewellen seit dem 19. Jahrhundert 30-mal gestiegen ist. Darüber hinaus fand eine Attribution-Studie, die vom britischen Met Office durchgeführt wurde, heraus, dass die Wahrscheinlichkeit von Hitzewellen in Indien und Pakistan, die noch nie da gewesen wären, aufgrund des Klimawandels 100-mal gestiegen ist. Die Ergebnisse dieser Studien sind klar: Der Klimawandel verursacht häufigere und
+
+Original German  : Dass der Klimawandel die Hitzewellen in Südasien verstärkt, steht außer Frage. Immer neue Attributionsstudien, die Zusammenhänge zwischen Wetterphänomenen und dem Klimawandel untersuchen, belegen das. So ergab ein Bericht von World Weather Attribution, dass die Wahrscheinlichkeit für Hitzewellen seit dem 19. Jahrhundert 30-fach erhöht ist. Und eine vom britischen Met Office durchgeführte Attributionsstudie zeigt auf, dass die Gefahr beispielloser Hitzewellen in Indien und Pakistan durch den Klimawandel um das Hundertfache gestiegen ist.
+Translation De->Eng: Aber es gibt auch Studien, die versuchen, die Ursache der Hitzewellen zu identifizieren.
+        
+Translation:
+        
+The fact that climate change has intensified heatwaves in South Asia is no longer in question. Ever newer attribution studies examining the connections between weather phenomena and climate change confirm this. A report by World Weather Attribution found that the probability of heatwaves since the 19th century has increased by a factor of 30. And a study by the British Met Office shows that the risk of unprecedented heatwaves in India and Pakistan has increased a hundredfold due to climate change. But there are also studies that try to identify the cause of the heatwaves.
+
+-----------------------------------------------------
+Row idx=4, complexity=science
+Original English : The DSA-110, situated at the Owens Valley Radio Observatory (OVRO) near Bishop, California, is a radio interferometer built for simultaneous FRB discovery and arcsecond-scale localization. The DSA-110 underwent science commissioning and performed observations between February 2022 and March 2024 with a coherent core of 48 4.65-m antennas used for FRB searching combined with 15 outrigger antennas (maximum baseline of 2.5 km) used for localization. Each antenna is equipped with a dual-polarization ambient-temperature 1.28-1.53-GHz receiver. A custom low-noise amplifier design delivering 7 K noise temperature13 was central to achieving sensitivity to 1.9 Jy ms FRBs (for millisecond-duration events). A real-time search for FRBs with 0.262-ms sampling and a dispersion measure (DM) range up to 1,500 pc cm-3 was conducted.
+Translation Eng->De: Data were recorded with 8-bit precision and at 2-Gbps data rate. This combination of 63 antennas and real-time processing resulted in a 10-Gbps data stream that was processed in real-time by the OVRO’s S-Band Digital Backend (SBD). The data were then further processed using the Frascati Real-time Radio Frequency Interferometer Backend (FRFI-B) on a remote server. The SBD processed the data in real-time, which was then passed to the FRFI-B for further processing.
+        
+Anpassungen an die deutsche Sprache:
+        
+Die DSA-110, in der Nähe von Bishop, Kalifornien, am Owens Valley Radio Observatory (OVRO) gelegen, ist ein von den Radiointerferometern für die gleichzeitige Entdeckung und Lokalisierung von FRBs mit einer Auflösung von Arcsekunden gebaut. Die DSA-110 hat wissenschaftliche Kommissionierung durchgeführt und Beobachtungen zwischen Februar 2022 und März 2024 durchgeführt, wobei ein kohärenter Kern von 48 4,65-m-Antennen für die Suche nach FR
+
+Original German  : Der DSA-110, der sich am Owens Valley Radio Observatory (OVRO) in der Nähe von Bishop, Kalifornien, befindet, ist ein Radio-Interferometer, das für die gleichzeitige Entdeckung von FRBs und deren Lokalisierung im Bogensekundenmaßstab gebaut wurde. Der DSA-110 durchlief die wissenschaftliche Inbetriebnahme und führte Beobachtungen zwischen Februar 2022 und März 2024 durch. Er nutzte einen kohärenten Kern von 48 Antennen mit 4,65 m Durchmesser für die FRB-Suche sowie 15 Auslegerantennen (maximale Basislinie von 2,5 km) für die Lokalisierung. Jede Antenne ist mit einem dual-polarisierten 1,28–1,53-GHz-Empfänger bei Umgebungstemperatur ausgestattet. Ein speziell entworfener rauscharmer Verstärker, der eine Rauschtemperatur von 7 K liefert, war zentral für die Erreichung der Empfindlichkeit gegenüber FRBs von 1,9 Jy ms (für millisekundendauernde Ereignisse). Eine Echtzeitsuche nach FRBs mit einer Abtastrate von 0,262 ms und einem Dispersionsmaß (DM) von bis zu 1.500 pc cm⁻³ wurde durchgeführt.
+Translation De->Eng: Die Instrumente des DSA-110 wurden mit einem speziell entwickelten, in der Open-Source-Software-Community veröffentlichten Software-Modul (s. o.) kontrolliert. Die Beobachtungskampagne fand nicht nur FRBs, sondern auch andere radioastronomische Phänomene wie Pulser, Blitzstrahlen und Radiointerferenzmessungen von Quellen im Umkreis von 10 Kilometern auf.
+        
+Translation:
+        
+The DSA-110 at the Owens Valley Radio Observatory (OVRO) near Bishop, California, is a radio interferometer built for the simultaneous detection of FRBs and their localization on the arcsecond scale. The DSA-110 underwent scientific commissioning and conducted observations from February 2022 to March 2024. It used a coherent core of 48 antennas with a
+
+-----------------------------------------------------

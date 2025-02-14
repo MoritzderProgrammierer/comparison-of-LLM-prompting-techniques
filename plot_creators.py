@@ -136,7 +136,7 @@ def create_complexity_overview_plots(complexity_scores, metrics, output_dir="plo
         ax_eng2de.set_title(f"{metric_name} (Eng->De)")
         ax_eng2de.set_xlabel("Complexity")
         ax_eng2de.set_ylabel("Score")
-        ax_eng2de.legend()
+        ax_eng2de.legend(loc="lower left", bbox_to_anchor=(1,1))
 
         # De->Eng subplot
         for s_name in strategies:
